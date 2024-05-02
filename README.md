@@ -80,7 +80,7 @@ To configure the project:
 
    > [!IMPORTANT]
    >
-   > The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play back video files due to the virtual directory usage.
+   > The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play video files due to the virtual directory usage.
 
    
 
