@@ -103,7 +103,7 @@ To configure the project:
 <u>C# Service (only if building from source):</u>
 
 - Visual Studio Pro 2022
-- ?
+- Microsoft Visual Studio Installer Projects 2022 Extension
 
 <u>PLC:</u>
 
