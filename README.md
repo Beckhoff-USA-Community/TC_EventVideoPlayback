@@ -64,7 +64,7 @@ To configure the project:
    >
    > If the package does not appear, double check Package source has TwinCAT HMI Customer profile selected
 
-3.  Set a virtual directory of where the video files exist. Go to Server -> TcHmiSrv -> Virtual directories and add the following entry.
+3. Set a virtual directory of where the video files exist. Go to Server -> TcHmiSrv -> Virtual directories and add the following entry.
 
    ![VirtDir](./images/VirtDir.PNG)
 
@@ -75,6 +75,14 @@ To configure the project:
    ![Properties](./images/Properties.PNG)
 
 6. Launch the HMI in a browser
+
+   
+
+   > [!IMPORTANT]
+   >
+   > The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play back video files due to the virtual directory usage.
+
+   
 
 7. Double click the Video event to play
 
