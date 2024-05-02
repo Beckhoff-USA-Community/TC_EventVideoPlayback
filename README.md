@@ -4,7 +4,7 @@ This repository includes both the source files and the release package for the T
 
 ## Getting Started!
 
-Instead of cloning the source repository for this project, start with the installer zip files located in the Releases section of this repository. The release package will include a sample PLC project, sample HMI project, PLC library, and the required Windows service installer. 
+Instead of cloning the source repository for this project, start with the installer zip files located in the [Releases section](https://github.com/Beckhoff-USA-Community/TC_EventVideoPlayback/releases) of this repository. The release package will include a sample PLC project, sample HMI project, PLC library, and the required Windows service installer. 
 
 ## TwinCAT Image to Video Service
 
