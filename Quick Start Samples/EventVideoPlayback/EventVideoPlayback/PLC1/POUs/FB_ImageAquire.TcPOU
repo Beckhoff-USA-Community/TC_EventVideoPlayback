@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="FB_ImageAquire" Id="{d1d4ab92-b3c1-4cac-ab3a-010aa8210778}" SpecialFunc="None">
+    <Declaration><![CDATA[FUNCTION_BLOCK FB_ImageAquire EXTENDS FB_VisionCameraBase
+VAR
+	_Image			 : ITcVnImage;
+	_ImageAvailable	 : BOOL;
+	ipImageInDisplay : ITcVnDisplayableImage;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <Property Name="Image" Id="{10d4dd17-8a58-4b1c-8f0d-16512446eea3}">
+      <Declaration><![CDATA[PROPERTY Image : ITcVnImage]]></Declaration>
+      <Get Name="Get" Id="{debe11ac-9225-4cab-bcb2-b378dacbf1ea}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[Image := _Image;
+_ImageAvailable := FALSE;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Property Name="ImageAvailable" Id="{cf6a288e-379c-4676-a5c8-a4e2f6f5445c}">
+      <Declaration><![CDATA[PROPERTY ImageAvailable : BOOL]]></Declaration>
+      <Get Name="Get" Id="{5dae1fd6-ec7e-4d0c-8413-f404f7b7d352}">
+        <Declaration><![CDATA[VAR
+END_VAR
+]]></Declaration>
+        <Implementation>
+          <ST><![CDATA[ImageAvailable := _ImageAvailable;]]></ST>
+        </Implementation>
+      </Get>
+    </Property>
+    <Method Name="ProcessImage" Id="{31a1b0a1-87b1-464c-a92d-a4586f368e25}">
+      <Declaration><![CDATA[METHOD PUBLIC  ProcessImage]]></Declaration>
+      <Implementation>
+        <ST><![CDATA[hr := F_VN_CopyIntoDisplayableImage(ipImageIn,ipImageInDisplay,S_OK);
+
+
+hr := F_VN_CopyImage(ipImageIn,_Image, S_OK);
+_ImageAvailable := TRUE;]]></ST>
+      </Implementation>
+    </Method>
+    <LineIds Name="FB_ImageAquire">
+      <LineId Id="9" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_ImageAquire.Image.Get">
+      <LineId Id="2" Count="0" />
+      <LineId Id="5" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_ImageAquire.ImageAvailable.Get">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+    <LineIds Name="FB_ImageAquire.ProcessImage">
+      <LineId Id="4" Count="2" />
+      <LineId Id="2" Count="1" />
+    </LineIds>
+  </POU>
+</TcPlcObject>
