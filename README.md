@@ -2,9 +2,30 @@
 
 This repository includes both the source files and the release package for the TwinCAT Event Video Playback package. The package provides an easy to use PLC interface for assembling images captured with TwinCAT Vision into a single video file. When the video file is created, a corresponding alarm event is logged into the TwinCAT Event Logger for later viewing. In addition, an HMI Control component is supplied for easy viewing and playback of logged video events on TwinCAT HMI.
 
-## Getting Started!
+## Getting Started
 
-Instead of cloning the source repository for this project, start with the installer zip files located in the [Releases section](https://github.com/Beckhoff-USA-Community/TC_EventVideoPlayback/releases) of this repository. The release package will include a sample PLC project, sample HMI project, PLC library, and the required Windows service installer. 
+Instead of cloning the source repository for this project, start with the installer zip files located in the [Releases section](https://github.com/Beckhoff-USA-Community/TC_EventVideoPlayback/releases) of this repository. Download the latest copy of the TcImageToVideo.zip from the Releases section. The release package will include a sample PLC project, sample HMI project, PLC library, and the required Windows service installer.
+
+## First Steps!!! - Install Instructions
+
+All these file necessary are included inside the TcImageToVideo.zip under the <u>Install Files</u>.
+
+### TcVision .Net Service
+
+1. Install .Net Runtime 8.0.4 for Windows x64 (**dotnet-runtime-8.0.4-win-x64.exe**)
+2. Install the TwinCAT Image to Video Service (**ImageToVideoSetup.msi**)
+
+### PLC Library
+
+1. Either open the included Quick Start Sample, or a new PLC Project
+2. Right Click Resources under PLC Project -> **Library Repository**
+3. Click the **Install** button, and install the included SPT Vision library
+
+### TwinCAT HMI
+
+1. Copy the **EventVision.'version'.nupkg** file to the directory **C:\TwinCAT\Functions\TE2000-HMI-Engineering\References.**
+
+
 
 ## TwinCAT Image to Video Service
 
@@ -14,27 +35,29 @@ Install the service via the supplied MSI installer file, and you can verify with
 
 ![WindowsService](./images/WindowsService.PNG)
 
-## PLC Project
+## PLC Project - Quick Start Sample
 
 For quick start purposes, a PLC sample project and the SPT_Vision library is supplied. To run the sample, follow these steps.
 
-1. Open PLC project and install the SPT_Vision library
+1. To open the .tnzip project files go to File -> Open -> Open From Archive
 
-2. Activate the TwinCAT project
+2. Open PLC project and install the SPT_Vision library
 
-3. Load the included sample images into the TC Vision File Source
+3. Activate the TwinCAT project
 
-4. Put the PLC into Run state
+4. Load the included sample images into the TC Vision File Source
 
-5. Open the Visu project and press the Run Vision button to start the vision process
+5. Put the PLC into Run state
+
+6. Open the Visu project and press the Run Vision button to start the vision process
 
    ![Visu](./images/Visu.PNG)
 
-6. Check images are streaming via the TwinCAT -> Windows-> ADS Image Watch
+7. Check images are streaming via the TwinCAT -> Windows-> ADS Image Watch
 
-7. To generate a video, press the Trigger Video button on the Visu
+8. To generate a video, press the Trigger Video button on the Visu
 
-8. Check that a video was created in the default directory C:\Videos
+9. Check that a video was created in the default directory C:\Videos
 
 #### Notes on PLC Project
 
@@ -49,6 +72,48 @@ For quick start purposes, a PLC sample project and the SPT_Vision library is sup
   > [!NOTE]
   >
   > If you are not able to play the video files on your system due to codec warning, try to adjust the codec settings; "Default", "AVC", "H264". You should be able to simply double click the video file and play it in Windows Media Player.
+
+## PLC Project - Adapting to Existing Vision Projects
+
+You can easily make use of this new service with existing TcVision Projects. There are 4 main components that need to be addressed.
+
+1. Add the SPT Vision Library to the Resources section of the PLC Project (v 3.0.2.1 or later)
+
+2. Instantiate a new FB_ImageToVideo and TriggerEvent BOOL
+   ```Structured Text
+   // ImageToVideo Instance
+   Playback : FB_ImageToVideo := (CameraName 			:= 'Camera1',
+                                   JsonAttribute := '{CreateVid : 1, CameraName: "Camera1"}',
+                                   FramesPerSecond := 10,
+                                   TimeBeforeEvent := T#7S,
+                                   TimeAfterEvent := T#3S,
+                                   VideoOutputDirectory := 'C:\Videos',
+                                   ReductionFactor := 0.25,
+                                   Codec := 'H264');
+   
+   // Event Trigger Boolean
+   TriggerEvent : BOOL;
+   ```
+   
+3. Add the CyclicLogic call to the main  body of your POU. This **MUST** be called cyclically to work.
+```Structured Text
+Playback.CyclicLogic();
+```
+
+4. Add the trigger logic somewhere in your program. The TriggerAlarmForVideoCapture method only needs to be called once to start processing.
+```Structured Text
+IF TriggerEvent THEN
+	TriggerEvent := FALSE;
+	Playback.TriggerAlarmForVideoCapture();
+END_IF
+```
+
+5. Add the AddImage method to your image aquisition loop of your program. This will add an image to the buffer of the Playback block.
+```Structured Text
+	Playback.AddImage(ipImageIn := ImageIn);
+```
+
+
 
 ## HMI Control Component
 
