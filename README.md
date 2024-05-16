@@ -20,7 +20,7 @@ All these file necessary are included inside the TcImageToVideo.zip under the <u
 ### PLC Library
 
 1. Either open the included Quick Start Sample, or a new PLC Project
-2. Right Click Resources under PLC Project -> **Library Repository**
+2. Right Click References under PLC Project -> **Library Repository**
 3. Click the **Install** button, and install the included SPT Vision library
 
 ### TwinCAT HMI
@@ -79,7 +79,7 @@ For quick start purposes, a PLC sample project and the SPT_Vision library is sup
 
 You can easily make use of this new service with existing TcVision Projects. There are 4 main components that need to be addressed.
 
-1. Add the SPT Vision Library to the Resources section of the PLC Project (v 3.0.2.1 or later)
+1. Add the SPT Vision Library to the References section of the PLC Project (v 3.0.2.1 or later)
 
 2. Instantiate a new FB_ImageToVideo and TriggerEvent BOOL
    ```Structured Text
