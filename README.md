@@ -185,7 +185,11 @@ To configure the project:
 
 - EventVideo NuGet Package
 
-  
+## Troubleshooting The VS Installer Project
+
+Since the VS Installer Project has the prerequisite selected to be installed offline, you might need to include the exe for the .net version on your build system. You should probably place this under `C:\Program Files (x86)\Microsoft SDKs\ClickOnce Bootstrapper\Packages\<The .Net Version>\<.net installer.exe`
+
+[Here is a note that might help](https://learn.microsoft.com/en-us/visualstudio/deployment/how-to-include-prerequisites-with-a-clickonce-application?view=vs-2022#Package)
 
 ## How to get support
 
