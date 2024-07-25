@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageToVideo", "ImageToVideo\ImageToVideo.csproj", "{6D922102-1C17-4307-8F5D-BC2F0297F645}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ImageToVideoSetup", "ImageToVideoSetup\ImageToVideoSetup.vdproj", "{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		All|Any CPU = All|Any CPU
@@ -35,14 +33,6 @@ Global
 		{6D922102-1C17-4307-8F5D-BC2F0297F645}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6D922102-1C17-4307-8F5D-BC2F0297F645}.Release|x64.ActiveCfg = Release|x64
 		{6D922102-1C17-4307-8F5D-BC2F0297F645}.Release|x64.Build.0 = Release|x64
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.All|Any CPU.ActiveCfg = Debug
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.All|x64.ActiveCfg = Debug
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.Debug|Any CPU.ActiveCfg = Debug
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.Debug|x64.ActiveCfg = Debug
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.DefaultBuild|Any CPU.ActiveCfg = Debug
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.DefaultBuild|x64.ActiveCfg = Debug
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.Release|Any CPU.ActiveCfg = Release
-		{D9FEC69C-E39A-47C0-BAEA-0A5445EBCC21}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

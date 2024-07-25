@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="21.9" version="21.9" Modules="professional" RootPath="." Language="en" Id="{5127F310-AB29-4818-A80B-2D0998236E3F}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0" MultiBuildValue="DefaultBuild:3"/>
+    <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
+    <ROW Property="AI_PREREQ_REPAIR_ENABLED" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="TcEventVideoPlayback-XAR"/>
+    <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:classic" MsiKey="AI_ThemeStyle"/>
+    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOREPAIR" Value="1"/>
+    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="AiEmbeddedUI" Value="1" MultiBuildValue="DefaultBuild:"/>
+    <ROW Property="AiWinUI" Value="1"/>
+    <ROW Property="AiWinUIBtnBackgroundDisabled" MultiBuildValue="DefaultBuild:##9E9E9E"/>
+    <ROW Property="AiWinUIBtnBackgroundNormal" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityDisabled" MultiBuildValue="DefaultBuild:0"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityNormal" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityPointerOver" MultiBuildValue="DefaultBuild:0.10"/>
+    <ROW Property="AiWinUIBtnBackgroundOpacityPressed" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="AiWinUIBtnBackgroundPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnBackgroundPressed" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnBorderDisabled" MultiBuildValue="DefaultBuild:##9E9E9E"/>
+    <ROW Property="AiWinUIBtnBorderNormal" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnBorderOpacityDisabled" MultiBuildValue="DefaultBuild:0.18"/>
+    <ROW Property="AiWinUIBtnBorderPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnBorderPressed" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnForegroundDisabled" MultiBuildValue="DefaultBuild:##2E2E2E"/>
+    <ROW Property="AiWinUIBtnForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundDisabled" MultiBuildValue="DefaultBuild:##000000"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundNormal" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundOpacityDisabled" MultiBuildValue="DefaultBuild:0"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundOpacityPointerOver" MultiBuildValue="DefaultBuild:0.10"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnInstallBackgroundPressed" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnInstallBorderDisabled" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnInstallBorderNormal" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnInstallBorderOpacityDisabled" MultiBuildValue="DefaultBuild:0.18"/>
+    <ROW Property="AiWinUIBtnInstallBorderPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnInstallBorderPressed" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnInstallForegroundDisabled" MultiBuildValue="DefaultBuild:##2E2E2E"/>
+    <ROW Property="AiWinUIBtnInstallForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnInstallForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnInstallForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnModifyBackgroundNormal" MultiBuildValue="DefaultBuild:##CB4814"/>
+    <ROW Property="AiWinUIBtnModifyBackgroundPointerOver" MultiBuildValue="DefaultBuild:##D24830"/>
+    <ROW Property="AiWinUIBtnModifyBackgroundPressed" MultiBuildValue="DefaultBuild:##A83000"/>
+    <ROW Property="AiWinUIBtnModifyBorderPointerOver" MultiBuildValue="DefaultBuild:##D24830"/>
+    <ROW Property="AiWinUIBtnModifyForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnModifyForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnModifyForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnPrintBorderDisabled" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnPrintBorderNormal" MultiBuildValue="DefaultBuild:Transparent"/>
+    <ROW Property="AiWinUIBtnPrintBorderPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnPrintBorderPressed" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnPrintForegroundDisabled" MultiBuildValue="DefaultBuild:EC9494"/>
+    <ROW Property="AiWinUIBtnPrintForegroundNormal" MultiBuildValue="DefaultBuild:##EC9494"/>
+    <ROW Property="AiWinUIBtnPrintForegroundPointerOver" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnPrintForegroundPressed" MultiBuildValue="DefaultBuild:##FFFFFF"/>
+    <ROW Property="AiWinUIBtnRemoveBackgroundNormal" MultiBuildValue="DefaultBuild:##945F29"/>
+    <ROW Property="AiWinUIBtnRemoveBackgroundPointerOver" MultiBuildValue="DefaultBuild:##AD733D"/>
+    <ROW Property="AiWinUIBtnRemoveBackgroundPressed" MultiBuildValue="DefaultBuild:##814D18"/>
+    <ROW Property="AiWinUIBtnRemoveBorderPointerOver" MultiBuildValue="DefaultBuild:##AD733D"/>
+    <ROW Property="AiWinUIBtnRemoveForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRemoveForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRemoveForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRepairBackgroundNormal" MultiBuildValue="DefaultBuild:##A21537"/>
+    <ROW Property="AiWinUIBtnRepairBackgroundPointerOver" MultiBuildValue="DefaultBuild:##B6485E"/>
+    <ROW Property="AiWinUIBtnRepairBackgroundPressed" MultiBuildValue="DefaultBuild:##981343"/>
+    <ROW Property="AiWinUIBtnRepairBorderPointerOver" MultiBuildValue="DefaultBuild:##F0809B"/>
+    <ROW Property="AiWinUIBtnRepairForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRepairForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRepairForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRunBackgroundNormal" MultiBuildValue="DefaultBuild:##964244"/>
+    <ROW Property="AiWinUIBtnRunBackgroundPointerOver" MultiBuildValue="DefaultBuild:##D0595C"/>
+    <ROW Property="AiWinUIBtnRunBackgroundPressed" MultiBuildValue="DefaultBuild:##7C3334"/>
+    <ROW Property="AiWinUIBtnRunBorderPointerOver" MultiBuildValue="DefaultBuild:##F2B2B2"/>
+    <ROW Property="AiWinUIBtnRunForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRunForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnRunForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnViewReadmeBackgroundNormal" MultiBuildValue="DefaultBuild:##C24E4F"/>
+    <ROW Property="AiWinUIBtnViewReadmeBackgroundPointerOver" MultiBuildValue="DefaultBuild:##E45556"/>
+    <ROW Property="AiWinUIBtnViewReadmeBackgroundPressed" MultiBuildValue="DefaultBuild:##A53031"/>
+    <ROW Property="AiWinUIBtnViewReadmeBorderPointerOver" MultiBuildValue="DefaultBuild:##FFBCBC"/>
+    <ROW Property="AiWinUIBtnViewReadmeForegroundNormal" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnViewReadmeForegroundPointerOver" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="AiWinUIBtnViewReadmeForegroundPressed" MultiBuildValue="DefaultBuild:White"/>
+    <ROW Property="BannerBitmap" Value="banner.jpg" MultiBuildValue="DefaultBuild:banner.scale200WhitewIcon.jpg" Type="1" MsiKey="BannerBitmap"/>
+    <ROW Property="DialogBitmap" Value="dialog.jpg" MultiBuildValue="DefaultBuild:dialog.scale200RedwIcon.jpg" Type="1" MsiKey="DialogBitmap"/>
+    <ROW Property="Manufacturer" Value="Beckhoff Automation LLC"/>
+    <ROW Property="ProductCode" Value="1033:{A702AC40-0273-415C-9F1D-1C1119AC0571} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="TcEventVideoPlayback-XAR"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{3C39B478-DF17-4E94-9972-5542BA9C5639}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:32-bit Windows versions" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="License_Dir" Directory_Parent="APPDIR" DefaultDir="License"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="lib_2_Dir" Directory_Parent="win_Dir" DefaultDir="lib"/>
+    <ROW Directory="lib_Dir" Directory_Parent="unix_Dir" DefaultDir="lib"/>
+    <ROW Directory="native_2_Dir" Directory_Parent="winx86_Dir" DefaultDir="native"/>
+    <ROW Directory="native_Dir" Directory_Parent="winx64_Dir" DefaultDir="native"/>
+    <ROW Directory="net6.0_2_Dir" Directory_Parent="lib_2_Dir" DefaultDir="net6.0"/>
+    <ROW Directory="net6.0_Dir" Directory_Parent="lib_Dir" DefaultDir="net6.0"/>
+    <ROW Directory="net8.0_2_Dir" Directory_Parent="lib_2_Dir" DefaultDir="net8.0"/>
+    <ROW Directory="net8.0_Dir" Directory_Parent="APPDIR" DefaultDir="IMAGET~1|ImageToVideo"/>
+    <ROW Directory="runtimes_Dir" Directory_Parent="net8.0_Dir" DefaultDir="runtimes"/>
+    <ROW Directory="unix_Dir" Directory_Parent="runtimes_Dir" DefaultDir="unix"/>
+    <ROW Directory="win_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win"/>
+    <ROW Directory="winx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x64"/>
+    <ROW Directory="winx86_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x86"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{F4380A9C-D16C-407E-9696-354E3D85F9FF}"/>
+    <ROW Component="ProductInformation" Value="{D7D02DD8-53B2-4736-BF6C-90482773214D}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_CustomARPName" ComponentId="{7CF11FA9-BBBD-4307-9235-5E54E85C509C}" Directory_="APPDIR" Attributes="260" KeyPath="DisplayName" Options="1"/>
+    <ROW Component="APPDIR" ComponentId="{F4380A9C-D16C-407E-9696-354E3D85F9FF}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="BF57E49C4E0C98AF391A28FF818B" ComponentId="{E93586C8-3AF6-4933-B48E-062F6315A503}" Directory_="APPDIR" Attributes="260" KeyPath="BF57E49C4E0C98AF391A28FF818B" Options="2"/>
+    <ROW Component="CliWrap.dll" ComponentId="{8A91F857-555C-4C1D-8207-D4800F78D066}" Directory_="net8.0_Dir" Attributes="0" KeyPath="CliWrap.dll"/>
+    <ROW Component="ImageToVideo.config.json" ComponentId="{D7863B81-C609-46CD-A305-EFAC6E1DF3F4}" Directory_="net8.0_Dir" Attributes="0" KeyPath="ImageToVideo.config.json" Type="0"/>
+    <ROW Component="ImageToVideo.dll" ComponentId="{72432B51-8114-44AA-A669-9B3E2A493876}" Directory_="net8.0_Dir" Attributes="0" KeyPath="ImageToVideo.dll"/>
+    <ROW Component="ImageToVideo.exe" ComponentId="{DF16ED00-14D3-4EE5-A29C-19AE8F72D2F1}" Directory_="net8.0_Dir" Attributes="256" KeyPath="ImageToVideo.exe"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Abstractions.dll" ComponentId="{DBF02514-7877-45F6-8301-FFD7FB29E85F}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Binder.dll" ComponentId="{77B0B9D9-4BA3-48A2-BC24-45461F5D3FAA}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.CommandLine.dll" ComponentId="{59D67919-ABF5-49F2-91BC-F99845B28410}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.CommandLine.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.EnvironmentVariables.dll" ComponentId="{8B1C5523-F3E7-4179-AED5-B8174B1CFA1C}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.EnvironmentVariables.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.FileExtensions.dll" ComponentId="{5B289B56-E389-4FFF-8612-1E670625C6C9}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.FileExtensions.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Json.dll" ComponentId="{1F400F69-C852-4B76-A199-30A0DC96345E}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Json.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.UserSecrets.dll" ComponentId="{64C8732C-BD59-4748-A4C6-BE4AC24D849F}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.UserSecrets.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.dll" ComponentId="{FFCFCAE2-5BD1-428A-B7BA-90E1137BE2BE}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInj_3_ection.dll" ComponentId="{B92AC2A9-9812-414D-BE17-6AA3AA1E804C}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll" ComponentId="{FD8069D8-D2BA-4ED2-9E81-4185BB670775}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Diagnostics.Abstractions.dll" ComponentId="{8CA225DA-08B0-4A7A-8B54-0594E079D42B}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Diagnostics.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Diagnostics.dll" ComponentId="{D65EABAB-E34A-4CEC-97A2-DBCFA5CF4EFA}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Diagnostics.dll"/>
+    <ROW Component="Microsoft.Extensions.FileProviders.Abstractions.dll" ComponentId="{E836AA29-1EDB-4D55-B9E4-337657EF2EE3}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.FileProviders.Physical.dll" ComponentId="{D4457125-4149-4420-A302-519D5CBAE5DE}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileProviders.Physical.dll"/>
+    <ROW Component="Microsoft.Extensions.FileSystemGlobbing.dll" ComponentId="{36311F60-FABF-40BA-8C88-423A1D2B1312}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileSystemGlobbing.dll"/>
+    <ROW Component="Microsoft.Extensions.Hosting.Abstractions.dll" ComponentId="{F016A338-9479-4A51-A67E-97037FAD23DE}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Hosting.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Hosting.WindowsServices.dll" ComponentId="{8242E438-00FF-484C-BA70-C15BD80982EB}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Hosting.WindowsServices.dll"/>
+    <ROW Component="Microsoft.Extensions.Hosting.dll" ComponentId="{13BA9CF2-ECDF-4D58-8023-B31E12BD94F8}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Hosting.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Abstractions.dll" ComponentId="{89471564-5BB1-4249-9BE6-57FEC941AA24}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Configuration.dll" ComponentId="{D898A802-CADC-46B7-923E-67BCA367AA28}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Configuration.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Console.dll" ComponentId="{24B1791A-7E8B-412D-BA23-E98F0A4D7821}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Console.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Debug.dll" ComponentId="{5E168574-0608-4E38-A9BC-D8B24B0CF054}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Debug.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.EventLog.dll" ComponentId="{92A61D0E-A004-4BBE-9587-6D7357859828}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.EventLog.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.EventSource.dll" ComponentId="{036E5730-6C57-4056-9056-076DBEEFC82F}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.EventSource.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.dll" ComponentId="{91AF5987-D035-4460-91A5-3A709AE98B5C}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.dll"/>
+    <ROW Component="Microsoft.Extensions.Options.ConfigurationExtensions.dll" ComponentId="{93BC9F54-5FFA-4C77-84B7-D6C0CA348C07}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Options.ConfigurationExtensions.dll"/>
+    <ROW Component="Microsoft.Extensions.Options.dll" ComponentId="{F8CF2CA6-AAB7-42BB-BBB4-3E0C1B90B81C}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Options.dll"/>
+    <ROW Component="Microsoft.Extensions.Primitives.dll" ComponentId="{74BF2F28-E8B2-4919-A627-CD1A5CD710FC}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Component="Microsoft.Win32.SystemEvents.dll" ComponentId="{12092726-F9DF-4FF0-BEE8-801A68E57B2A}" Directory_="net8.0_Dir" Attributes="0" KeyPath="Microsoft.Win32.SystemEvents.dll"/>
+    <ROW Component="Microsoft.Win32.SystemEvents.dll_2" ComponentId="{1C722C4E-9BF2-4836-BF4B-353CA3B871AB}" Directory_="net6.0_2_Dir" Attributes="0" KeyPath="Microsoft.Win32.SystemEvents.dll_2"/>
+    <ROW Component="OpenCvSharp.dll" ComponentId="{D154ED3F-FC62-4333-84CF-FED9EC319A71}" Directory_="net8.0_Dir" Attributes="0" KeyPath="OpenCvSharp.dll"/>
+    <ROW Component="OpenCvSharpExtern.dll" ComponentId="{FAFCBE12-6D94-4F5A-9858-D821CB872C15}" Directory_="native_Dir" Attributes="256" KeyPath="OpenCvSharpExtern.dll"/>
+    <ROW Component="OpenCvSharpExtern.dll_2" ComponentId="{06B2B28D-7303-45D9-8398-DFA05D589CCF}" Directory_="native_2_Dir" Attributes="0" KeyPath="OpenCvSharpExtern.dll_2"/>
+    <ROW Component="ProductInformation" ComponentId="{D7D02DD8-53B2-4736-BF6C-90482773214D}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="System.ComponentModel.Composition.dll" ComponentId="{30B94B25-EDE0-482D-A246-1BB241FA7FED}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.ComponentModel.Composition.dll"/>
+    <ROW Component="System.Configuration.ConfigurationManager.dll" ComponentId="{70985C4C-B3BF-4011-BFBA-340A411568D8}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Configuration.ConfigurationManager.dll"/>
+    <ROW Component="System.Diagnostics.EventLog.Messages.dll" ComponentId="{1784141F-8915-43D7-86D4-2DA5B89A1E44}" Directory_="net8.0_2_Dir" Attributes="0" KeyPath="System.Diagnostics.EventLog.Messages.dll"/>
+    <ROW Component="System.Diagnostics.EventLog.dll" ComponentId="{E76DAB1B-A93F-49AE-8627-1FB09A793AF6}" Directory_="net8.0_2_Dir" Attributes="0" KeyPath="System.Diagnostics.EventLog.dll"/>
+    <ROW Component="System.Diagnostics.EventLog.dll_3" ComponentId="{64195C64-4750-478D-A028-8CBD6F6FE20F}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Diagnostics.EventLog.dll_3"/>
+    <ROW Component="System.Drawing.Common.dll" ComponentId="{8CD9AD99-81E2-495D-B53E-0FC795AD9404}" Directory_="net6.0_Dir" Attributes="0" KeyPath="System.Drawing.Common.dll"/>
+    <ROW Component="System.Drawing.Common.dll_5" ComponentId="{F2C00A55-6F2D-41D6-9233-043CA54FE83B}" Directory_="net6.0_2_Dir" Attributes="0" KeyPath="System.Drawing.Common.dll_5"/>
+    <ROW Component="System.Drawing.Common.dll_6" ComponentId="{1BC545C1-70EE-48C9-BAD9-43FF9465A540}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Drawing.Common.dll_6"/>
+    <ROW Component="System.Reactive.dll" ComponentId="{07CADF67-3161-4BDC-A503-E6AAB7ED48EB}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Reactive.dll"/>
+    <ROW Component="System.Security.Cryptography.Prote_3_ctedData.dll" ComponentId="{392EE250-EA97-491F-B655-029E198E662E}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Security.Cryptography.Prote_3_ctedData.dll"/>
+    <ROW Component="System.Security.Cryptography.ProtectedData.dll" ComponentId="{DCEB1A8E-E7BC-4E13-A12A-F36005F6CDC4}" Directory_="net6.0_2_Dir" Attributes="0" KeyPath="System.Security.Cryptography.ProtectedData.dll"/>
+    <ROW Component="System.Security.Permissions.dll" ComponentId="{2B13EF2F-9729-4C42-89C9-20D9D16C9BF4}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Security.Permissions.dll"/>
+    <ROW Component="System.ServiceProcess.ServiceContr_3_oller.dll" ComponentId="{EBC7BA33-1EF3-4023-87A7-970FF23A8960}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.ServiceProcess.ServiceContr_3_oller.dll"/>
+    <ROW Component="System.ServiceProcess.ServiceController.dll" ComponentId="{3D8713DA-5D53-4C5D-B7C4-6903013D8400}" Directory_="net8.0_2_Dir" Attributes="0" KeyPath="System.ServiceProcess.ServiceController.dll"/>
+    <ROW Component="System.Windows.Extensions.dll" ComponentId="{1982914A-11B6-4BFC-A4F9-9E122473EB5A}" Directory_="net6.0_2_Dir" Attributes="0" KeyPath="System.Windows.Extensions.dll"/>
+    <ROW Component="System.Windows.Extensions.dll_3" ComponentId="{3B37BC64-69E0-415D-A1CD-30B9D4A4EE70}" Directory_="net8.0_Dir" Attributes="0" KeyPath="System.Windows.Extensions.dll_3"/>
+    <ROW Component="TwinCAT.Ads.Abstractions.dll" ComponentId="{0B113E41-BBFF-4F5F-88D4-9149FE199FEC}" Directory_="net8.0_Dir" Attributes="0" KeyPath="TwinCAT.Ads.Abstractions.dll"/>
+    <ROW Component="TwinCAT.Ads.Server.dll" ComponentId="{1EEEB53A-2A92-410E-8B6F-7AB5D6969EC0}" Directory_="net8.0_Dir" Attributes="0" KeyPath="TwinCAT.Ads.Server.dll"/>
+    <ROW Component="TwinCAT.Ads.dll" ComponentId="{D8A9AFB7-58AF-4A26-9CCD-29EA6ECE0962}" Directory_="net8.0_Dir" Attributes="0" KeyPath="TwinCAT.Ads.dll"/>
+    <ROW Component="eula.rtf" ComponentId="{F51DCC66-DD29-4916-AEDA-FFC42D977943}" Directory_="License_Dir" Attributes="0" KeyPath="LICENSE" Type="0"/>
+    <ROW Component="opencv_videoio_ffmpeg490.dll" ComponentId="{B435C19A-B2E9-44E5-82A9-ADAB2E7066A1}" Directory_="native_2_Dir" Attributes="0" KeyPath="opencv_videoio_ffmpeg490.dll"/>
+    <ROW Component="opencv_videoio_ffmpeg490_64.dll" ComponentId="{7856F341-4297-49C3-82CA-78E3D2BF0F19}" Directory_="native_Dir" Attributes="256" KeyPath="opencv_videoio_ffmpeg490_64.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="BF57E49C4E0C98AF391A28FF818B" Title=".NET Runtime 8.0.6 x64" Description=".NET Runtime 8.0.6 x64" Display="3" Level="1" Attributes="0"/>
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="LICENSE" Component_="eula.rtf" FileName="LICENSE" Attributes="0" SourcePath="..\Includes\License\LICENSE" SelfReg="false"/>
+    <ROW File="LICENSEOpenCvSharp4" Component_="eula.rtf" FileName="LICENS~1|LICENSE-OpenCvSharp4" Attributes="0" SourcePath="..\Includes\License\LICENSE-OpenCvSharp4" SelfReg="false"/>
+    <ROW File="CliWrap.dll" Component_="CliWrap.dll" FileName="CliWrap.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\CliWrap.dll" SelfReg="false"/>
+    <ROW File="ImageToVideo.config.json" Component_="ImageToVideo.config.json" FileName="IMAGET~1.JSO|ImageToVideo.config.json" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\ImageToVideo.config.json" SelfReg="false"/>
+    <ROW File="ImageToVideo.deps.json" Component_="ImageToVideo.config.json" FileName="IMAGET~2.JSO|ImageToVideo.deps.json" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\ImageToVideo.deps.json" SelfReg="false"/>
+    <ROW File="ImageToVideo.dll" Component_="ImageToVideo.dll" FileName="IMAGET~1.DLL|ImageToVideo.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\ImageToVideo.dll" SelfReg="false"/>
+    <ROW File="ImageToVideo.exe" Component_="ImageToVideo.exe" FileName="IMAGET~1.EXE|ImageToVideo.exe" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\ImageToVideo.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ImageToVideo.pdb" Component_="ImageToVideo.exe" FileName="IMAGET~1.PDB|ImageToVideo.pdb" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\ImageToVideo.pdb" SelfReg="false"/>
+    <ROW File="ImageToVideo.runtimeconfig.json" Component_="ImageToVideo.config.json" FileName="IMAGET~3.JSO|ImageToVideo.runtimeconfig.json" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\ImageToVideo.runtimeconfig.json" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.Abstractions.dll" Component_="Microsoft.Extensions.Configuration.Abstractions.dll" FileName="MICROS~1.DLL|Microsoft.Extensions.Configuration.Abstractions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.Binder.dll" Component_="Microsoft.Extensions.Configuration.Binder.dll" FileName="MICROS~2.DLL|Microsoft.Extensions.Configuration.Binder.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.CommandLine.dll" Component_="Microsoft.Extensions.Configuration.CommandLine.dll" FileName="MICROS~3.DLL|Microsoft.Extensions.Configuration.CommandLine.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.CommandLine.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.dll" Component_="Microsoft.Extensions.Configuration.dll" FileName="MICROS~4.DLL|Microsoft.Extensions.Configuration.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.EnvironmentVariables.dll" Component_="Microsoft.Extensions.Configuration.EnvironmentVariables.dll" FileName="MICROS~5.DLL|Microsoft.Extensions.Configuration.EnvironmentVariables.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.FileExtensions.dll" Component_="Microsoft.Extensions.Configuration.FileExtensions.dll" FileName="MICROS~6.DLL|Microsoft.Extensions.Configuration.FileExtensions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.Json.dll" Component_="Microsoft.Extensions.Configuration.Json.dll" FileName="MICROS~7.DLL|Microsoft.Extensions.Configuration.Json.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.UserSecrets.dll" Component_="Microsoft.Extensions.Configuration.UserSecrets.dll" FileName="MICROS~8.DLL|Microsoft.Extensions.Configuration.UserSecrets.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Configuration.UserSecrets.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll" FileName="MICROS~9.DLL|Microsoft.Extensions.DependencyInjection.Abstractions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.dll" Component_="Microsoft.Extensions.DependencyInj_3_ection.dll" FileName="MICRO~10.DLL|Microsoft.Extensions.DependencyInjection.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Diagnostics.Abstractions.dll" Component_="Microsoft.Extensions.Diagnostics.Abstractions.dll" FileName="MICRO~11.DLL|Microsoft.Extensions.Diagnostics.Abstractions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Diagnostics.dll" Component_="Microsoft.Extensions.Diagnostics.dll" FileName="MICRO~12.DLL|Microsoft.Extensions.Diagnostics.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Diagnostics.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.FileProviders.Abstractions.dll" Component_="Microsoft.Extensions.FileProviders.Abstractions.dll" FileName="MICRO~13.DLL|Microsoft.Extensions.FileProviders.Abstractions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.FileProviders.Physical.dll" Component_="Microsoft.Extensions.FileProviders.Physical.dll" FileName="MICRO~14.DLL|Microsoft.Extensions.FileProviders.Physical.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.FileSystemGlobbing.dll" Component_="Microsoft.Extensions.FileSystemGlobbing.dll" FileName="MICRO~15.DLL|Microsoft.Extensions.FileSystemGlobbing.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Hosting.Abstractions.dll" Component_="Microsoft.Extensions.Hosting.Abstractions.dll" FileName="MICRO~16.DLL|Microsoft.Extensions.Hosting.Abstractions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Hosting.dll" Component_="Microsoft.Extensions.Hosting.dll" FileName="MICRO~17.DLL|Microsoft.Extensions.Hosting.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Hosting.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Hosting.WindowsServices.dll" Component_="Microsoft.Extensions.Hosting.WindowsServices.dll" FileName="MICRO~18.DLL|Microsoft.Extensions.Hosting.WindowsServices.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Hosting.WindowsServices.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.Abstractions.dll" Component_="Microsoft.Extensions.Logging.Abstractions.dll" FileName="MICRO~19.DLL|Microsoft.Extensions.Logging.Abstractions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.Configuration.dll" Component_="Microsoft.Extensions.Logging.Configuration.dll" FileName="MICRO~20.DLL|Microsoft.Extensions.Logging.Configuration.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Logging.Configuration.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.Console.dll" Component_="Microsoft.Extensions.Logging.Console.dll" FileName="MICRO~21.DLL|Microsoft.Extensions.Logging.Console.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Logging.Console.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.Debug.dll" Component_="Microsoft.Extensions.Logging.Debug.dll" FileName="MICRO~22.DLL|Microsoft.Extensions.Logging.Debug.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Logging.Debug.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.dll" Component_="Microsoft.Extensions.Logging.dll" FileName="MICRO~23.DLL|Microsoft.Extensions.Logging.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Logging.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.EventLog.dll" Component_="Microsoft.Extensions.Logging.EventLog.dll" FileName="MICRO~24.DLL|Microsoft.Extensions.Logging.EventLog.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Logging.EventLog.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.EventSource.dll" Component_="Microsoft.Extensions.Logging.EventSource.dll" FileName="MICRO~25.DLL|Microsoft.Extensions.Logging.EventSource.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Logging.EventSource.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Options.ConfigurationExtensions.dll" Component_="Microsoft.Extensions.Options.ConfigurationExtensions.dll" FileName="MICRO~26.DLL|Microsoft.Extensions.Options.ConfigurationExtensions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Options.dll" Component_="Microsoft.Extensions.Options.dll" FileName="MICRO~27.DLL|Microsoft.Extensions.Options.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Options.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Primitives.dll" Component_="Microsoft.Extensions.Primitives.dll" FileName="MICRO~28.DLL|Microsoft.Extensions.Primitives.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Extensions.Primitives.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Win32.SystemEvents.dll" Component_="Microsoft.Win32.SystemEvents.dll" FileName="MICRO~29.DLL|Microsoft.Win32.SystemEvents.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\Microsoft.Win32.SystemEvents.dll" SelfReg="false"/>
+    <ROW File="OpenCvSharp.dll" Component_="OpenCvSharp.dll" FileName="OPENCV~1.DLL|OpenCvSharp.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\OpenCvSharp.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.Common.dll" Component_="System.Drawing.Common.dll" FileName="SYSTEM~1.DLL|System.Drawing.Common.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Win32.SystemEvents.dll_2" Component_="Microsoft.Win32.SystemEvents.dll_2" FileName="MICROS~1.DLL|Microsoft.Win32.SystemEvents.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.Common.dll_5" Component_="System.Drawing.Common.dll_5" FileName="SYSTEM~1.DLL|System.Drawing.Common.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.ProtectedData.dll" Component_="System.Security.Cryptography.ProtectedData.dll" FileName="SYSTEM~2.DLL|System.Security.Cryptography.ProtectedData.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll" SelfReg="false"/>
+    <ROW File="System.Windows.Extensions.dll" Component_="System.Windows.Extensions.dll" FileName="SYSTEM~3.DLL|System.Windows.Extensions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.EventLog.dll" Component_="System.Diagnostics.EventLog.dll" FileName="SYSTEM~1.DLL|System.Diagnostics.EventLog.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.EventLog.Messages.dll" Component_="System.Diagnostics.EventLog.Messages.dll" FileName="SYSTEM~2.DLL|System.Diagnostics.EventLog.Messages.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll" SelfReg="false"/>
+    <ROW File="System.ServiceProcess.ServiceController.dll" Component_="System.ServiceProcess.ServiceController.dll" FileName="SYSTEM~3.DLL|System.ServiceProcess.ServiceController.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win\lib\net8.0\System.ServiceProcess.ServiceController.dll" SelfReg="false"/>
+    <ROW File="OpenCvSharpExtern.dll" Component_="OpenCvSharpExtern.dll" FileName="OPENCV~1.DLL|OpenCvSharpExtern.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win-x64\native\OpenCvSharpExtern.dll" SelfReg="false"/>
+    <ROW File="opencv_videoio_ffmpeg490_64.dll" Component_="opencv_videoio_ffmpeg490_64.dll" FileName="OPENCV~2.DLL|opencv_videoio_ffmpeg490_64.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win-x64\native\opencv_videoio_ffmpeg490_64.dll" SelfReg="false"/>
+    <ROW File="OpenCvSharpExtern.dll_2" Component_="OpenCvSharpExtern.dll_2" FileName="OPENCV~1.DLL|OpenCvSharpExtern.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win-x86\native\OpenCvSharpExtern.dll" SelfReg="false"/>
+    <ROW File="opencv_videoio_ffmpeg490.dll" Component_="opencv_videoio_ffmpeg490.dll" FileName="OPENCV~2.DLL|opencv_videoio_ffmpeg490.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\runtimes\win-x86\native\opencv_videoio_ffmpeg490.dll" SelfReg="false"/>
+    <ROW File="System.ComponentModel.Composition.dll" Component_="System.ComponentModel.Composition.dll" FileName="SYSTEM~1.DLL|System.ComponentModel.Composition.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.ComponentModel.Composition.dll" SelfReg="false"/>
+    <ROW File="System.Configuration.ConfigurationManager.dll" Component_="System.Configuration.ConfigurationManager.dll" FileName="SYSTEM~2.DLL|System.Configuration.ConfigurationManager.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.Configuration.ConfigurationManager.dll" SelfReg="false"/>
+    <ROW File="System.Diagnostics.EventLog.dll_3" Component_="System.Diagnostics.EventLog.dll_3" FileName="SYSTEM~3.DLL|System.Diagnostics.EventLog.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.Diagnostics.EventLog.dll" SelfReg="false"/>
+    <ROW File="System.Drawing.Common.dll_6" Component_="System.Drawing.Common.dll_6" FileName="SYSTEM~4.DLL|System.Drawing.Common.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.Drawing.Common.dll" SelfReg="false"/>
+    <ROW File="System.Reactive.dll" Component_="System.Reactive.dll" FileName="SYSTEM~5.DLL|System.Reactive.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.Reactive.dll" SelfReg="false"/>
+    <ROW File="System.Security.Cryptography.Prote_3_ctedData.dll" Component_="System.Security.Cryptography.Prote_3_ctedData.dll" FileName="SYSTEM~6.DLL|System.Security.Cryptography.ProtectedData.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.Security.Cryptography.ProtectedData.dll" SelfReg="false"/>
+    <ROW File="System.Security.Permissions.dll" Component_="System.Security.Permissions.dll" FileName="SYSTEM~7.DLL|System.Security.Permissions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.Security.Permissions.dll" SelfReg="false"/>
+    <ROW File="System.ServiceProcess.ServiceContr_3_oller.dll" Component_="System.ServiceProcess.ServiceContr_3_oller.dll" FileName="SYSTEM~8.DLL|System.ServiceProcess.ServiceController.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.ServiceProcess.ServiceController.dll" SelfReg="false"/>
+    <ROW File="System.Windows.Extensions.dll_3" Component_="System.Windows.Extensions.dll_3" FileName="SYSTEM~9.DLL|System.Windows.Extensions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\System.Windows.Extensions.dll" SelfReg="false"/>
+    <ROW File="TwinCAT.Ads.Abstractions.dll" Component_="TwinCAT.Ads.Abstractions.dll" FileName="TWINCA~1.DLL|TwinCAT.Ads.Abstractions.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\TwinCAT.Ads.Abstractions.dll" SelfReg="false"/>
+    <ROW File="TwinCAT.Ads.dll" Component_="TwinCAT.Ads.dll" FileName="TWINCA~2.DLL|TwinCAT.Ads.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\TwinCAT.Ads.dll" SelfReg="false"/>
+    <ROW File="TwinCAT.Ads.Server.dll" Component_="TwinCAT.Ads.Server.dll" FileName="TWINCA~3.DLL|TwinCAT.Ads.Server.dll" Attributes="0" SourcePath="..\..\CSharpImageToVideo\ImageToVideo\bin\x64\Release\net8.0\TwinCAT.Ads.Server.dll" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_DownloadPrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="695"/>
+    <ROW Action="AI_ExtractPrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="696"/>
+    <ROW Action="AI_InstallPrePrerequisite" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="697"/>
+    <ROW Action="AI_VerifyPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="698"/>
+    <ROW Action="AI_CleanPrePrereq" Condition="AI_BOOTSTRAPPER AND (NOT AI_PrereqsFulfilled)" Sequence="699"/>
+    <ROW Action="AI_AppSearchEx" Condition="AI_BOOTSTRAPPER" Sequence="252"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="251"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" SummInfoMetadata="Page Count:450" ExtUI="true" UseLargeSchema="true" MsiPackageType="x64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW TimeStampUrl="http://timestamp.digicert.com" SignerDescription="[|ProductName]" SignOptions="0" SignTool="7" UseSha256="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="LicenseAgreementDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\LicenseAgreementDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DownloadPrereq" Description="Downloading prerequisite software" DescriptionLocId="ActionText.Description.AI_DownloadPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_DownloadPrereq"/>
+    <ROW Action="AI_ExtractPrereq" Description="Extracting prerequisite software" DescriptionLocId="ActionText.Description.AI_ExtractPrereq" Template="[1]" TemplateLocId="ActionText.Template.AI_ExtractPrereq"/>
+    <ROW Action="AI_InstallPostPrerequisite" Description="Configuring prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrePrerequisite" Description="Configuring prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_InstallPrerequisite" Description="Configuring prerequisite software" DescriptionLocId="ActionText.Description.AI_InstallPrerequisite" Template="[1]" TemplateLocId="ActionText.Template.AI_InstallPrerequisite"/>
+    <ROW Action="AI_VerifyPrePrereq" Description="Verifying prerequisites" DescriptionLocId="ActionText.Description.AI_VerifyPrereq" Template="[1] was not installed correctly." TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+    <ROW Action="AI_VerifyPrereq" Description="Verifying prerequisites" DescriptionLocId="ActionText.Description.AI_VerifyPrereq" Template="[1] was not installed correctly." TemplateLocId="ActionText.Template.AI_VerifyPrereq"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="banner.scale200WhitewIcon.jpg" SourcePath="..\Images\banner.scale-200-White-w-Icon.jpg"/>
+    <ROW Name="dialog.scale200RedwIcon.jpg" SourcePath="..\Images\dialog.scale-200-Red-w-Icon.jpg"/>
+    <ROW Name="file_deleter.ps1" SourcePath="&lt;AI_SCRIPTS&gt;file_deleter.ps1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="LicenseAgreementDlg" Control="AgreementText" Type="ScrollableText" X="20" Y="60" Width="330" Height="120" Attributes="7" Text="..\Includes\License\eula.rtf" Order="400" TextLocId="Control.Text.LicenseAgreementDlg#AgreementText" MsiKey="LicenseAgreementDlg#AgreementText"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="LicenseAgreementDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_RollbackPrereq" Condition="1" Ordering="102"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="301"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="103"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrereq" Condition="1" Ordering="101"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_RollbackPrePrereq" Condition="1" Ordering="104"/>
+    <ROW Dialog_="ExitDialog" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="302"/>
+    <ROW Dialog_="FatalError" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="105"/>
+    <ROW Dialog_="UserExit" Control_="Finish" Event="DoAction" Argument="AI_CleanPrePrereq" Condition="1" Ordering="102"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="LicenseAgreementDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_CleanPrePrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_CleanPrereq" Type="65" Source="Prereq.dll" Target="CleanPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DoRemoveExternalUIStub" Type="3585" Source="ExternalUICleaner.dll" Target="DoRemoveExternalUIStub" WithoutSeq="true"/>
+    <ROW Action="AI_DownloadPrereq" Type="1" Source="Prereq.dll" Target="DownloadPrereq"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
+    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
+    <ROW Action="AI_InstallPrePrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrePrereq"/>
+    <ROW Action="AI_InstallPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPrereq"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_RemoveExternalUIStub" Type="1" Source="ExternalUICleaner.dll" Target="RemoveExternalUIStub"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_RollbackPrePrereq" Type="65" Source="Prereq.dll" Target="RollbackPrePrereq" WithoutSeq="true"/>
+    <ROW Action="AI_RollbackPrereq" Type="65" Source="Prereq.dll" Target="RollbackPrereq" WithoutSeq="true"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_VerifyPrePrereq" Type="1" Source="Prereq.dll" Target="VerifyPrePrereq"/>
+    <ROW Action="AI_VerifyPrereq" Type="1" Source="Prereq.dll" Target="VerifyPrereq"/>
+    <ROW Action="ImageToVideoInstall" Type="3090" Source="ImageToVideo.exe" Target="/Install"/>
+    <ROW Action="ImageToVideoUninstall" Type="3090" Source="ImageToVideo.exe" Target="/Uninstall"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="CliWrap.dll"/>
+    <ROW Feature_="MainFeature" Component_="ImageToVideo.config.json"/>
+    <ROW Feature_="MainFeature" Component_="ImageToVideo.dll"/>
+    <ROW Feature_="MainFeature" Component_="ImageToVideo.exe"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.CommandLine.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.EnvironmentVariables.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.FileExtensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.UserSecrets.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInj_3_ection.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Diagnostics.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Diagnostics.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.FileProviders.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.FileProviders.Physical.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.FileSystemGlobbing.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Hosting.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Hosting.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Hosting.WindowsServices.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Configuration.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Console.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Debug.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.EventLog.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.EventSource.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Options.ConfigurationExtensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Options.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.SystemEvents.dll"/>
+    <ROW Feature_="MainFeature" Component_="OpenCvSharp.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.Common.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.SystemEvents.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.Common.dll_5"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.ProtectedData.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Windows.Extensions.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.EventLog.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.EventLog.Messages.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceProcess.ServiceController.dll"/>
+    <ROW Feature_="MainFeature" Component_="OpenCvSharpExtern.dll"/>
+    <ROW Feature_="MainFeature" Component_="opencv_videoio_ffmpeg490_64.dll"/>
+    <ROW Feature_="MainFeature" Component_="OpenCvSharpExtern.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="opencv_videoio_ffmpeg490.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.ComponentModel.Composition.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Configuration.ConfigurationManager.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Diagnostics.EventLog.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="System.Drawing.Common.dll_6"/>
+    <ROW Feature_="MainFeature" Component_="System.Reactive.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Prote_3_ctedData.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Security.Permissions.dll"/>
+    <ROW Feature_="MainFeature" Component_="eula.rtf"/>
+    <ROW Feature_="BF57E49C4E0C98AF391A28FF818B" Component_="BF57E49C4E0C98AF391A28FF818B"/>
+    <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
+    <ROW Feature_="MainFeature" Component_="System.ServiceProcess.ServiceContr_3_oller.dll"/>
+    <ROW Feature_="MainFeature" Component_="System.Windows.Extensions.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="TwinCAT.Ads.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="TwinCAT.Ads.dll"/>
+    <ROW Feature_="MainFeature" Component_="TwinCAT.Ads.Server.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1502"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_VerifyPrereq" Sequence="1101"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
+    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
+    <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
+    <ROW Action="ImageToVideoInstall" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) )" Sequence="6401"/>
+    <ROW Action="AI_DETECT_MODERNWIN" Condition="(VersionNT &gt;= 603)" Sequence="53" MsiKey="AI_DETECT_MODERNWIN"/>
+    <ROW Action="AI_DETECT_WINTHEME" Condition="(VersionNT &gt;= 603)" Sequence="54" MsiKey="AI_DETECT_WINTHEME"/>
+    <ROW Action="ImageToVideoUninstall" Condition="( ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) OR ( Installed AND ( REMOVE = &quot;ALL&quot; OR AI_INSTALL_MODE = &quot;Remove&quot; ) ) )" Sequence="1601"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1296"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1297"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1298"/>
+    <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
+    <ROW Action="AI_CleanPrereq" Sequence="1302"/>
+    <ROW Action="AI_InstallPrePrerequisite" Condition="Installed" Sequence="1299"/>
+    <ROW Action="AI_AppSearchEx" Sequence="102"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="%TWINCAT3DIR" Description="TwinCAT 3 Installed"/>
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType = 1)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="( Version9X OR VersionNT64 )" Description="[ProductName] cannot be installed on [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
+    <ROW Registry="BF57E49C4E0C98AF391A28FF818B" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="BF57E49C4E0C98AF391A28FF818B" Value="1" Component_="BF57E49C4E0C98AF391A28FF818B"/>
+    <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
+    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="CurrentVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion" Name="\"/>
+    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
+    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
+    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName" VirtualValue="#"/>
+    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
+    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
+    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Microsoft" Root="-1" Key="Software\Microsoft" Name="\"/>
+    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="ModifyPath" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="NoRepair" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="NoRepair" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Prereqs" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs" Name="\"/>
+    <ROW Registry="ProductCode" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]" Name="\"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductNameProductVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="\"/>
+    <ROW Registry="ProductVersion" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="\"/>
+    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Readme" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Readme" Value="[ARPREADME]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
+    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
+    <ROW Registry="Uninstall" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall" Name="\"/>
+    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
+    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName" VirtualValue="#"/>
+    <ROW Registry="Windows" Root="-1" Key="Software\Microsoft\Windows" Name="\"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="BF57E49C4E0C98AF391A28FF818B" DisplayName=".NET Runtime 8.0.6 x64" VersionMin="8.0" SetupFileUrl="Prerequisites\.NET 8.0\dotnet-runtime-8.0.6-win-x64.exe" Location="0" ExactSize="0" WinNTVersions="Windows 9x/ME/NT/2000/XP/Vista/Windows 7/Windows 8 x86/Windows 8.1 x86/Windows 10 x86" WinNT64Versions="Windows 8 x64, Windows Server 2012 x64, Windows 10 version 1507 x64, Windows 10 version 1511 x64" Operator="1" NoUiComLine="/q /norestart" Options="f" TargetName=".NET 8.0\dotnet-runtime-8.0.6-win-x64.exe" Feature="BF57E49C4E0C98AF391A28FF818B"/>
+    <ATTRIBUTE name="PrereqsOrder" value="BF57E49C4E0C98AF391A28FF818B"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="BF57E49C4E0C98AF391A28FF818BSystemF" Prereq="BF57E49C4E0C98AF391A28FF818B" SearchType="12" SearchString="HKLM\SOFTWARE\dotnet\Setup\InstalledVersions\x64\sharedfx\Microsoft.NETCore.App" VerMin="8.0.6" Order="1" Property="PreReqSearch_BF57E49C4E0C98AF391A28"/>
+  </COMPONENT>
+</DOCUMENT>
