@@ -4,13 +4,12 @@
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0" MultiBuildValue="DefaultBuild:3"/>
     <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
     <ROW Property="AI_PREREQ_REPAIR_ENABLED" MultiBuildValue="DefaultBuild:1"/>
-    <ROW Property="AI_PRODUCTNAME_ARP" Value="TcEventVideoPlayback-XAR"/>
     <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:classic" MsiKey="AI_ThemeStyle"/>
-    <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
     <ROW Property="ARPNOREPAIR" Value="1"/>
-    <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
+    <ROW Property="ARPPRODUCTICON" Value="CameraAlarmIcon.exe" Type="8"/>
     <ROW Property="AiEmbeddedUI" Value="1" MultiBuildValue="DefaultBuild:"/>
     <ROW Property="AiWinUI" Value="1"/>
     <ROW Property="AiWinUIBtnBackgroundDisabled" MultiBuildValue="DefaultBuild:##9E9E9E"/>
@@ -135,7 +134,6 @@
     <ROW Component="ProductInformation" Value="{D7D02DD8-53B2-4736-BF6C-90482773214D}"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_CustomARPName" ComponentId="{7CF11FA9-BBBD-4307-9235-5E54E85C509C}" Directory_="APPDIR" Attributes="260" KeyPath="DisplayName" Options="1"/>
     <ROW Component="APPDIR" ComponentId="{F4380A9C-D16C-407E-9696-354E3D85F9FF}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="BF57E49C4E0C98AF391A28FF818B" ComponentId="{E93586C8-3AF6-4933-B48E-062F6315A503}" Directory_="APPDIR" Attributes="260" KeyPath="BF57E49C4E0C98AF391A28FF818B" Options="2"/>
     <ROW Component="CliWrap.dll" ComponentId="{8A91F857-555C-4C1D-8207-D4800F78D066}" Directory_="net8.0_Dir" Attributes="0" KeyPath="CliWrap.dll"/>
@@ -200,9 +198,9 @@
     <ROW Component="opencv_videoio_ffmpeg490_64.dll" ComponentId="{7856F341-4297-49C3-82CA-78E3D2BF0F19}" Directory_="native_Dir" Attributes="256" KeyPath="opencv_videoio_ffmpeg490_64.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
-    <ROW Feature="BF57E49C4E0C98AF391A28FF818B" Title=".NET Runtime 8.0.6 x64" Description=".NET Runtime 8.0.6 x64" Display="3" Level="1" Attributes="0"/>
-    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
-    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+    <ROW Feature="BF57E49C4E0C98AF391A28FF818B" Title=".NET Runtime 8.0.6 x64" Description=".NET Runtime 8.0.6 x64" Display="0" Level="1" Attributes="16"/>
+    <ROW Feature="TwinCAT_ImageToVideo_Service" Title="TwinCAT ImageToVideo Service" Description="TwinCAT ImageToVideo Service" Display="0" Level="1" Directory_="APPDIR" Attributes="16"/>
+    <ATTRIBUTE name="CurrentFeature" value="TwinCAT_ImageToVideo_Service"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
     <ROW File="LICENSE" Component_="eula.rtf" FileName="LICENSE" Attributes="0" SourcePath="..\Includes\License\LICENSE" SelfReg="false"/>
@@ -376,7 +374,6 @@
     <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
     <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
     <ROW Action="AI_ExtractPrereq" Type="65" Source="Prereq.dll" Target="ExtractPrereq"/>
-    <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
     <ROW Action="AI_InstallPostPrerequisite" Type="1" Source="Prereq.dll" Target="InstallPostPrereq"/>
     <ROW Action="AI_InstallPrePrerequisite" Type="65" Source="Prereq.dll" Target="InstallPrePrereq"/>
@@ -400,69 +397,71 @@
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
-    <ROW Feature_="MainFeature" Component_="APPDIR"/>
-    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
-    <ROW Feature_="MainFeature" Component_="CliWrap.dll"/>
-    <ROW Feature_="MainFeature" Component_="ImageToVideo.config.json"/>
-    <ROW Feature_="MainFeature" Component_="ImageToVideo.dll"/>
-    <ROW Feature_="MainFeature" Component_="ImageToVideo.exe"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.Abstractions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.Binder.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.CommandLine.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.EnvironmentVariables.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.FileExtensions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.Json.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.UserSecrets.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInj_3_ection.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Diagnostics.Abstractions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Diagnostics.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.FileProviders.Abstractions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.FileProviders.Physical.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.FileSystemGlobbing.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Hosting.Abstractions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Hosting.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Hosting.WindowsServices.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Abstractions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Configuration.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Console.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Debug.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.EventLog.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.EventSource.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Options.ConfigurationExtensions.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Options.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Primitives.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.SystemEvents.dll"/>
-    <ROW Feature_="MainFeature" Component_="OpenCvSharp.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Drawing.Common.dll"/>
-    <ROW Feature_="MainFeature" Component_="Microsoft.Win32.SystemEvents.dll_2"/>
-    <ROW Feature_="MainFeature" Component_="System.Drawing.Common.dll_5"/>
-    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.ProtectedData.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Windows.Extensions.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Diagnostics.EventLog.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Diagnostics.EventLog.Messages.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.ServiceProcess.ServiceController.dll"/>
-    <ROW Feature_="MainFeature" Component_="OpenCvSharpExtern.dll"/>
-    <ROW Feature_="MainFeature" Component_="opencv_videoio_ffmpeg490_64.dll"/>
-    <ROW Feature_="MainFeature" Component_="OpenCvSharpExtern.dll_2"/>
-    <ROW Feature_="MainFeature" Component_="opencv_videoio_ffmpeg490.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.ComponentModel.Composition.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Configuration.ConfigurationManager.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Diagnostics.EventLog.dll_3"/>
-    <ROW Feature_="MainFeature" Component_="System.Drawing.Common.dll_6"/>
-    <ROW Feature_="MainFeature" Component_="System.Reactive.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Security.Cryptography.Prote_3_ctedData.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Security.Permissions.dll"/>
-    <ROW Feature_="MainFeature" Component_="eula.rtf"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="APPDIR"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="ProductInformation"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="CliWrap.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="ImageToVideo.config.json"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="ImageToVideo.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="ImageToVideo.exe"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.CommandLine.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.EnvironmentVariables.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.FileExtensions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.Json.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Configuration.UserSecrets.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.DependencyInj_3_ection.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Diagnostics.Abstractions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Diagnostics.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.FileProviders.Abstractions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.FileProviders.Physical.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.FileSystemGlobbing.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Hosting.Abstractions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Hosting.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Hosting.WindowsServices.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Logging.Configuration.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Logging.Console.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Logging.Debug.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Logging.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Logging.EventLog.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Logging.EventSource.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Options.ConfigurationExtensions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Options.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Win32.SystemEvents.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="OpenCvSharp.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Drawing.Common.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="Microsoft.Win32.SystemEvents.dll_2"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Drawing.Common.dll_5"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Security.Cryptography.ProtectedData.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Windows.Extensions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Diagnostics.EventLog.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Diagnostics.EventLog.Messages.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.ServiceProcess.ServiceController.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="OpenCvSharpExtern.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="opencv_videoio_ffmpeg490_64.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="OpenCvSharpExtern.dll_2"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="opencv_videoio_ffmpeg490.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.ComponentModel.Composition.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Configuration.ConfigurationManager.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Diagnostics.EventLog.dll_3"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Drawing.Common.dll_6"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Reactive.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Security.Cryptography.Prote_3_ctedData.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Security.Permissions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="eula.rtf"/>
     <ROW Feature_="BF57E49C4E0C98AF391A28FF818B" Component_="BF57E49C4E0C98AF391A28FF818B"/>
-    <ROW Feature_="MainFeature" Component_="AI_CustomARPName"/>
-    <ROW Feature_="MainFeature" Component_="System.ServiceProcess.ServiceContr_3_oller.dll"/>
-    <ROW Feature_="MainFeature" Component_="System.Windows.Extensions.dll_3"/>
-    <ROW Feature_="MainFeature" Component_="TwinCAT.Ads.Abstractions.dll"/>
-    <ROW Feature_="MainFeature" Component_="TwinCAT.Ads.dll"/>
-    <ROW Feature_="MainFeature" Component_="TwinCAT.Ads.Server.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.ServiceProcess.ServiceContr_3_oller.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="System.Windows.Extensions.dll_3"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="TwinCAT.Ads.Abstractions.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="TwinCAT.Ads.dll"/>
+    <ROW Feature_="TwinCAT_ImageToVideo_Service" Component_="TwinCAT.Ads.Server.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="CameraAlarmIcon.exe" SourcePath="..\Images\Camera-Alarm-Icon.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -473,7 +472,6 @@
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
     <ROW Action="AI_VerifyPrereq" Sequence="1101"/>
     <ROW Action="AI_AppSearchEx" Sequence="101"/>
-    <ROW Action="AI_GetArpIconPath" Sequence="1401"/>
     <ROW Action="AI_RemoveExternalUIStub" Condition="(REMOVE=&quot;ALL&quot;) AND ((VersionNT &gt; 500) OR((VersionNT = 500) AND (ServicePackLevel &gt;= 4)))" Sequence="1501"/>
     <ROW Action="ImageToVideoInstall" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) )" Sequence="6401"/>
     <ROW Action="AI_DETECT_MODERNWIN" Condition="(VersionNT &gt;= 603)" Sequence="53" MsiKey="AI_DETECT_MODERNWIN"/>
@@ -486,12 +484,12 @@
     <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
     <ROW Action="AI_DpiContentScale" Sequence="52"/>
     <ROW Action="AI_EnableDebugLog" Sequence="51"/>
-    <ROW Action="AI_DownloadPrereq" Sequence="1296"/>
-    <ROW Action="AI_ExtractPrereq" Sequence="1297"/>
-    <ROW Action="AI_InstallPrerequisite" Sequence="1298"/>
+    <ROW Action="AI_DownloadPrereq" Sequence="1295"/>
+    <ROW Action="AI_ExtractPrereq" Sequence="1296"/>
+    <ROW Action="AI_InstallPrerequisite" Sequence="1297"/>
     <ROW Action="AI_InstallPostPrerequisite" Sequence="1301"/>
     <ROW Action="AI_CleanPrereq" Sequence="1302"/>
-    <ROW Action="AI_InstallPrePrerequisite" Condition="Installed" Sequence="1299"/>
+    <ROW Action="AI_InstallPrePrerequisite" Condition="Installed" Sequence="1298"/>
     <ROW Action="AI_AppSearchEx" Sequence="102"/>
     <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
     <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
@@ -510,38 +508,14 @@
     <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
     <ROW Registry="BF57E49C4E0C98AF391A28FF818B" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="BF57E49C4E0C98AF391A28FF818B" Value="1" Component_="BF57E49C4E0C98AF391A28FF818B"/>
     <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
-    <ROW Registry="Comments" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Comments" Value="[ARPCOMMENTS]" Component_="AI_CustomARPName"/>
-    <ROW Registry="Contact" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Contact" Value="[ARPCONTACT]" Component_="AI_CustomARPName"/>
-    <ROW Registry="CurrentVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion" Name="\"/>
-    <ROW Registry="DisplayIcon" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayIcon" Value="[ARP_ICON_PATH]" Component_="AI_CustomARPName"/>
-    <ROW Registry="DisplayName" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayName" Value="[AI_PRODUCTNAME_ARP]" Component_="AI_CustomARPName"/>
-    <ROW Registry="DisplayVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="DisplayVersion" Value="[ProductVersion]" Component_="AI_CustomARPName"/>
-    <ROW Registry="EstimatedSize" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="EstimatedSize" Value="#[AI_ARP_SIZE]" Component_="AI_CustomARPName" VirtualValue="#"/>
-    <ROW Registry="HelpLink" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpLink" Value="[ARPHELPLINK]" Component_="AI_CustomARPName"/>
-    <ROW Registry="HelpTelephone" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="HelpTelephone" Value="[ARPHELPTELEPHONE]" Component_="AI_CustomARPName"/>
-    <ROW Registry="InstallLocation" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="InstallLocation" Value="[APPDIR]" Component_="AI_CustomARPName"/>
     <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
-    <ROW Registry="Microsoft" Root="-1" Key="Software\Microsoft" Name="\"/>
-    <ROW Registry="ModifyPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="ModifyPath" Value="[AI_UNINSTALLER] /i [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
-    <ROW Registry="NoRepair" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="NoRepair" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
     <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
     <ROW Registry="Prereqs" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs" Name="\"/>
     <ROW Registry="ProductCode" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]" Name="\"/>
     <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
-    <ROW Registry="ProductNameProductVersion" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="\"/>
     <ROW Registry="ProductVersion" Root="-1" Key="Software\Caphyon\Advanced Installer\Prereqs\[ProductCode]\[ProductVersion]" Name="\"/>
-    <ROW Registry="Publisher" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Publisher" Value="[Manufacturer]" Component_="AI_CustomARPName"/>
-    <ROW Registry="Readme" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="Readme" Value="[ARPREADME]" Component_="AI_CustomARPName"/>
     <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
-    <ROW Registry="URLInfoAbout" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLInfoAbout" Value="[ARPURLINFOABOUT]" Component_="AI_CustomARPName"/>
-    <ROW Registry="URLUpdateInfo" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="URLUpdateInfo" Value="[ARPURLUPDATEINFO]" Component_="AI_CustomARPName"/>
-    <ROW Registry="Uninstall" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall" Name="\"/>
-    <ROW Registry="UninstallPath" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallPath" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
-    <ROW Registry="UninstallString" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="UninstallString" Value="[AI_UNINSTALLER] /x [ProductCode] AI_UNINSTALLER_CTP=1" Component_="AI_CustomARPName"/>
     <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
-    <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
-    <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName" VirtualValue="#"/>
-    <ROW Registry="Windows" Root="-1" Key="Software\Microsoft\Windows" Name="\"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="classic"/>
