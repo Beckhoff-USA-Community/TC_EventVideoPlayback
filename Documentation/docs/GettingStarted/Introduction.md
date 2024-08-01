@@ -7,7 +7,7 @@ This site serves as reference documentation for the TwinCAT Event Video Playback
 
 Great question! TcEventVideoPlayback provides and easy to use function for transforming cyclical images captured by TwinCAT Vision into video files based on a trigger input. These video files are logged to the internal Event Logger and can be played back with the included TwinCAT HMI control.
 
-**Example:** Lets say you keep having a machine down occurrence on a production machine. You already have an inspection camera installed, but you would like a way to see what is going on and why this keeps happening. In comes TcEventVideoPlayback... With a simple PLC function block, the images are loaded into a buffer when a trigger occurs, and then converted to a video file on the hard disk.
+**Example:** Lets say you keep having a machine down occurrence on a production machine. You already have an inspection camera installed, but you would like a way to see what is going on and why this keeps happening. In comes TcEventVideoPlayback... With a simple PLC function block, once the event occurs all of the images from the inspection camera are combined into a video file. This video file is then stored locally, and can be played back on our HMI along with the corresponding alarm.
 
 
 

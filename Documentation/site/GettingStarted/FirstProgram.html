@@ -807,7 +807,33 @@
 <p><img alt="ReloadTmc" src="../Images/ReloadTmc.PNG" /></p>
 <h2 id="hmi-project-quick-start-sample">HMI Project - Quick Start Sample</h2>
 <p>Included in the package is a NuGet Package for the EventVision component. This package should be installed properly if selected. To install manually, copy the EventVision.'version'.nupkg file to the directory C:\TwinCAT\Functions\TE2000-HMI-Engineering\References.</p>
-<p>To configure the project:</p>
+<p><strong>Running the sample</strong>:</p>
+<ol>
+<li>
+<p>Simply build the HMI project by right-clicking and selecting rebuild</p>
+</li>
+<li>
+<p>Launch the HMI project in the browser, not live-view. A full browser is required for playback of the video files.</p>
+</li>
+</ol>
+<blockquote>
+<p>If you get a blank window stating TcHmiSrv Resource is missing, that means the project needs to be rebuilt from step 1</p>
+</blockquote>
+<ol>
+<li>
+<p>Toggle the Run Program</p>
+<p><img alt="RunProgram" src="../Images/HMIUsage1.png" /></p>
+</li>
+<li>
+<p>Trigger an event</p>
+<p><img alt="ToggleEvent" src="../Images/HMIUsage2.png" /></p>
+</li>
+<li>
+<p>Double click the Video event to play</p>
+<p><img alt="PlayVideo" src="../Images/PlayVideo.PNG" /></p>
+</li>
+</ol>
+<p><strong>To configure the project from start to finish</strong>:</p>
 <ol>
 <li>
 <p>Install the <strong>Beckhoff.TwinCAT.HMI.EventLogger</strong> package with the NuGet Package Manager</p>
@@ -835,10 +861,6 @@
 <blockquote>
 <p>The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play video files due to the virtual directory usage.</p>
 </blockquote>
-</li>
-<li>
-<p>Double click the Video event to play</p>
-<p><img alt="PlayVideo" src="../Images/PlayVideo.PNG" /></p>
 </li>
 </ol>
 <blockquote>

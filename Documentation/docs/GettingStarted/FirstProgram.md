@@ -71,7 +71,30 @@ To fix this, you must reload the tmc files for each of the FileSource TcCom obje
 
 Included in the package is a NuGet Package for the EventVision component. This package should be installed properly if selected. To install manually, copy the EventVision.'version'.nupkg file to the directory C:\TwinCAT\Functions\TE2000-HMI-Engineering\References.
 
-To configure the project:
+**Running the sample**:
+
+1. Simply build the HMI project by right-clicking and selecting rebuild
+
+2. Launch the HMI project in the browser, not live-view. A full browser is required for playback of the video files.
+
+> If you get a blank window stating TcHmiSrv Resource is missing, that means the project needs to be rebuilt from step 1
+
+3. Toggle the Run Program
+
+    ![RunProgram](../Images/HMIUsage1.png)
+
+
+4. Trigger an event
+
+    ![ToggleEvent](../Images/HMIUsage2.png)
+
+5. Double click the Video event to play
+
+    ![PlayVideo](../Images/PlayVideo.PNG)
+
+
+
+**To configure the project from start to finish**:
 
 1. Install the **Beckhoff.TwinCAT.HMI.EventLogger** package with the NuGet Package Manager
 
@@ -94,10 +117,6 @@ To configure the project:
 6. Launch the HMI in a browser
 
     > The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play video files due to the virtual directory usage.
-
-7. Double click the Video event to play
-
-    ![PlayVideo](../Images/PlayVideo.PNG)
 
 
 > - If you only see a blank playback window, try adjusting the codec that was used to record the video
