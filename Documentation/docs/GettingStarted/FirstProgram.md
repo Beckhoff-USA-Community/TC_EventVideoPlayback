@@ -60,7 +60,7 @@ The second known common issue is the TcVision binaries error when trying to acti
 
 ![BinariesError](../Images/BinariesError.png)
 
-      
+
 To fix this, you must reload the tmc files for each of the FileSource TcCom objects under Vision. Make sure to do it for both.
       
 ![ReloadTmc](../Images/ReloadTmc.PNG)
