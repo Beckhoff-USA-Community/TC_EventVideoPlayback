@@ -1,0 +1,131 @@
+{
+  "$schema": "../../TcHmiSrv/schema/ExtensionSettings.Schema.json",
+  "version": "1.12.760.59",
+  "configVersion": "1.0.0.13",
+  "guid": "63A51718-33F7-4F6B-851A-963E4F3F74BD",
+  "visibility": "AlwaysShow",
+  "policies": [
+    "StrictPropertyValidation"
+  ],
+  "symbols": {
+    "ListEnabledTargetSystems": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true,
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "description": "Get a list of all enabled target systems."
+    },
+    "ClearLoggedEvents": {
+      "readValue": {
+        "function": true
+      },
+      "writeValue": {
+        "type": "object",
+        "properties": {
+          "targetName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "targetName"
+        ]
+      },
+      "sample": {
+        "description": "Clear the event database of a the 'Local' target system.",
+        "value": {
+          "targetName": "Local"
+        }
+      },
+      "description": "Clear the event database of a specific target system."
+    },
+    "Diagnostics": {
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "readValue": {
+        "function": true,
+        "type": "object",
+        "readOnly": true,
+        "properties": {
+          "TARGET_SYSTEMS": {
+            "readOnly": true,
+            "type": "object",
+            "description": "DESC_TARGET_SYSTEM",
+            "additionalProperties": {
+              "readOnly": true,
+              "type": "object",
+              "properties": {
+                "connectionState": {
+                  "propertyOrder": 1,
+                  "readOnly": true,
+                  "type": "string"
+                },
+                "connectError": {
+                  "propertyOrder": 2,
+                  "readOnly": true,
+                  "type": "string"
+                },
+                "importedEventsCount": {
+                  "propertyOrder": 3,
+                  "readOnly": true,
+                  "type": "integer"
+                },
+                "importedMessagesCount": {
+                  "propertyOrder": 4,
+                  "readOnly": true,
+                  "type": "integer"
+                },
+                "importedAlarmsCount": {
+                  "propertyOrder": 5,
+                  "readOnly": true,
+                  "type": "integer"
+                },
+                "importedInvalidAlarmsCount": {
+                  "propertyOrder": 6,
+                  "readOnly": true,
+                  "type": "integer"
+                },
+                "cachedMessagesCount": {
+                  "hidden": true,
+                  "propertyOrder": 7,
+                  "readOnly": true,
+                  "type": "integer"
+                },
+                "cachedAlarmsCount": {
+                  "hidden": true,
+                  "propertyOrder": 8,
+                  "readOnly": true,
+                  "type": "integer"
+                },
+                "cachedInvalidAlarmsCount": {
+                  "hidden": true,
+                  "propertyOrder": 9,
+                  "readOnly": true,
+                  "type": "integer"
+                },
+                "activeAlarmsCount": {
+                  "propertyOrder": 10,
+                  "readOnly": true,
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "connectionState"
+              ]
+            }
+          }
+        }
+      },
+      "description": "Get information about the connections between the HMI serer and the configured target systems."
+    }
+  },
+  "packageVersion": "19.0.120",
+  "productVersion": "1.12.760.59",
+  "signature": "ivA9zdCZi2EYu74ZNdgCMyyNZwzG9NaENbWNWPeesFA4Svllp7CkiGWn+HP2n/cZl1tGlzrNPVIMMP+8A5cLlzeu5RGiGygpnGGpvO59Y2QrtFEKm+lQBbdu8WW4S2plJIzygR8D88fMXH9SJtXQywrJg0ZSgSVH75DTcTsG3aM0HBo+q94Wq73MLs/mrKkEAldUBV2rTM5iE/bFME9B71PAevEdwA7BfYYpKDlOxuGYC+v4dDvyF5W+tAUSBPKBQ7z3U6vW0/tMy8jvWvKHX5vcZ7gMvORbX6kNp4kJUTmOJRlPJyJTKZtTHwrW2IzUQGnJ/I2xPOGQrtTNHTO5Xw=="
+}

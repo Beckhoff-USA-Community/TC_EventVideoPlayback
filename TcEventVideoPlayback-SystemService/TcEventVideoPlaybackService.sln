@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcEventVideoPlaybackService", "TcEventVideoPlaybackService\TcEventVideoPlaybackService.csproj", "{3851979D-604E-448A-9BD1-1D2CD220C614}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "CodecLibs", "CodecLibs\CodecLibs.shproj", "{866619D4-4A5A-422A-BCE9-7A0AD66C86EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3851979D-604E-448A-9BD1-1D2CD220C614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3851979D-604E-448A-9BD1-1D2CD220C614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3851979D-604E-448A-9BD1-1D2CD220C614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3851979D-604E-448A-9BD1-1D2CD220C614}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {51DF4C51-427A-4F18-B083-88F3DEBCFB85}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		CodecLibs\CodecLibs.projitems*{3851979d-604e-448a-9bd1-1d2cd220c614}*SharedItemsImports = 5
+		CodecLibs\CodecLibs.projitems*{866619d4-4a5a-422a-bce9-7a0ad66c86ec}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal

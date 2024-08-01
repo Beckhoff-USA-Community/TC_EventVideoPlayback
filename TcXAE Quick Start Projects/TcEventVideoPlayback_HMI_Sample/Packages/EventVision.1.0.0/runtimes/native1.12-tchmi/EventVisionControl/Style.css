@@ -1,0 +1,47 @@
+/* General theme independed control css. */
+
+.TcHmi_Controls_EventVision_EventVisionControl {
+    overflow: hidden;
+}
+
+.TcHmi_Controls_EventVision_EventVisionControl-Template {
+    width: 100%;
+    height: 100%;
+}
+.tchmi-event-grid-template-popup-footer {
+    grid-template-columns: auto 1fr auto;
+}
+
+.TcHmi_Controls_EventVision_EventVisionControl_video-button {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.TcHmi_Controls_EventVision_EventVisionControl_no-video {
+    visibility: collapse;
+}
+
+.ui-dialog {
+    z-index: 9001;
+}
+
+
+/* If the main use for this control is interaction
+    uncomment the following lines to give user feedback:
+    This overlays the whole control with a white color
+    and changes the mouse cursor */
+
+/*
+.TcHmi_Controls_$default_namespace$_EventVision.TcHmi_Controls_System_TcHmiControl-operate-disallowed::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 100;
+    cursor: not-allowed;
+}
+*/

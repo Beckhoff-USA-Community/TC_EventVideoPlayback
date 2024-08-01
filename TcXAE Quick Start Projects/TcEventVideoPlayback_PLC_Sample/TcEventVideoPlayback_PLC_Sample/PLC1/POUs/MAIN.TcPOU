@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.13">
+  <POU Name="MAIN" Id="{e0407f6e-5d14-4afa-a1e7-2bd86e05399a}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Camera1 : FB_ImageAquire; 
+
+
+	Playback : FB_ImageToVideo := (CameraName 			:= 'Camera1', 
+							   	   JsonAttribute 		:= '{CreateVid : 1, CameraName: "Camera1"}', 
+							   	   FramesPerSecond 		:= 10,
+							   	   TimeBeforeEvent		:= T#7S,
+								   TimeAfterEvent		:= T#3S,
+								   VideoOutputDirectory := 'C:\TcAlarmVideo',
+								   ReductionFactor 		:= 0.25);
+
+	TriggerEvent : BOOL;
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[Camera1.CyclicLogic();
+IF Camera1.ImageAvailable THEN
+	Playback.AddImage(ipImageIn := Camera1.Image);
+END_IF
+
+Playback.CyclicLogic();
+IF TriggerEvent THEN
+	TriggerEvent := FALSE;
+	Playback.TriggerAlarmForVideoCapture();
+END_IF]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="26" Count="8" />
+      <LineId Id="24" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

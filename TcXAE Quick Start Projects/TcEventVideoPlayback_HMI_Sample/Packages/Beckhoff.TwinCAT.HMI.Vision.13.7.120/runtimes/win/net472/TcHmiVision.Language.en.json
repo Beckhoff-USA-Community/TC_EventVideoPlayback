@@ -1,0 +1,46 @@
+{
+  "locale": "en",
+  "localizedText": {
+    "RUNTIMES": "Runtimes",
+    "NETID": "AmsNetId",
+    "TIMEOUT": "Timeout",
+    "ENABLED": "Enabled",
+    "PORT": "Port",
+    "DESC_RUNTIME": "Runtime",
+    "DESC_RUNTIME_STREAMPORT": "Desired port for streaming images. -1 = auto",
+    "STREAM_SERVER_PORT": "Streaming Server Port",
+    "AMSNETID": "AmsNetId",
+    "IMAGESERVERPORT": "ImageServerPort",
+
+    "INIT": "Initialize new TcHmiVision Extension",
+    "INIT_ERROR": "Initialization error: {0}",
+    "SHUTDOWN": "Shutdown TcHmiVision Extension",
+    "SHUTDOWN_ERROR": "Shutdown error: {0}",
+
+    "READCONFIG": "Reading configuration",
+    "NEWCONFIG": "Create new runtime config: '{0}'",
+    "EDITCONFIG": "Edit runtime config: '{0}', Old: {{1}}, New: {{2}}",
+    "REMOVECONFIG": "Remove runtime config: '{0}'",
+    "CONFIG_ERROR": "Error while reading extension config: {0}",
+
+    "adsState": "ADS state",
+    "systemServiceAdsState": "System service ADS state",
+    "connectionState": "Connection state",
+
+    "SYMBOLNOTFOUND_ERROR": "Symbol could not be found: {0}",
+
+    "CREATEADSRECEIVER": "Create new ADS client for symbol: '{0}'",
+    "READSYMBOL_ERROR": "Error reading symbol: '{0}', Message: '{1}'",
+    "READSYMBOL_STREAM_ERROR": "Error reading stream symbol: '{0}' Message: '{1}'",
+    "READSYMBOL_HTTPLISTENER_ERROR": "HttpListener error reading stream symbol: '{0}' Message: '{1}'",
+    "READSYMBOL_NODATA": "No data when reading symbol: '{0}'",
+    "READSYMBOL_ADS_ERROR": "ADS Error reading symbol: '{0}', Message: '{1}', Elapsed time: '{2}'ms",
+    "ADSCONNECTION_ERROR": "Error connecting ADS. Runtime name: '{0}', Message: '{1}', Elapsed time: '{2}'ms",
+    "RUNTIMENOTFOUND_ERROR": "Runtime not found: '{0}'",
+
+    "LISTSYMBOLS_TIME": "Listing symbols took {0} ms",
+    "LISTSYMBOLS_ERROR": "Error listing symbols",
+
+    "STACK_TRACE": "Stack trace: {0}"
+  }
+}

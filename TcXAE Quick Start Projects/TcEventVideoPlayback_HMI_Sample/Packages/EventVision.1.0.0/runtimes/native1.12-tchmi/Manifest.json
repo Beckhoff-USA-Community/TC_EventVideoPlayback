@@ -1,0 +1,47 @@
+{
+  "modules": [
+    {
+      "type": "Package",
+      "nugetId": "Beckhoff.TwinCAT.HMI.Framework"
+    },
+    {
+      "type": "Package",
+      "nugetId": "Beckhoff.TwinCAT.HMI.Controls"
+    },
+    {
+      "type": "Control",
+      "basePath": "EventVisionControl/",
+      "descriptionFile": "Description.json",
+      "toolboxCategory": "Beckhoff.TwinCAT.HMI:202"
+    },
+    {
+      "type": "Resource",
+      "path": "EventVisionControl/DetailsVideoPopup.js"
+    },
+    {
+      "type": "Resource",
+      "path": "Scripts/jquery-ui.min.js"
+    },
+    {
+      "type": "Resource",
+      "path": "Scripts/jquery-ui.min.css"
+    },
+    {
+      "type": "Resource",
+      "path": "Scripts/images"
+    },
+    {
+      "type": "Resource",
+      "path": "Scripts/moment.min.js"
+    }
+  ],
+  "provideMetadata": {
+    "toolbox": {
+      "EventVision": {
+        "200": "EventVision"
+      }
+    }
+  },
+  "$schema": ".hmiframework/Schema/Manifest.Schema.json",
+  "apiVersion": 1
+}
