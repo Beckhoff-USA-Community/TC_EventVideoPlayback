@@ -1,0 +1,39 @@
+## Adapting to Existing Vision Projects
+
+You can easily make use of this new service with existing TcVision Projects. There are 4 main components that need to be addressed.
+
+1. Add the SPT Vision Library to the References section of the PLC Project (v3.0.4 or later)
+
+2. Instantiate a new FB_ImageToVideo and TriggerEvent BOOL
+
+    ```
+       // ImageToVideo Instance
+       Playback : FB_ImageToVideo := (CameraName 			:= 'Camera1',
+                                       JsonAttribute := '{CreateVid : 1, CameraName: "Camera1"}',
+                                       FramesPerSecond := 10,
+                                       TimeBeforeEvent := T#7S,
+                                       TimeAfterEvent := T#3S,
+                                       VideoOutputDirectory : 'C:\TcAlarmVideos',
+                                       ReductionFactor := 0.25);
+   
+       // Event Trigger Boolean
+       TriggerEvent : BOOL;
+    ```
+   
+3. Add the CyclicLogic call to the main  body of your POU. This **MUST** be called cyclically to work.
+```
+Playback.CyclicLogic();
+```
+
+4. Add the trigger logic somewhere in your program. The TriggerAlarmForVideoCapture method only needs to be called once to start processing.
+```
+IF TriggerEvent THEN
+	TriggerEvent := FALSE;
+	Playback.TriggerAlarmForVideoCapture();
+END_IF
+```
+
+5. Add the AddImage method to your image aquisition loop of your program. This will add an image to the buffer of the Playback block.
+```Structured Text
+	Playback.AddImage(ipImageIn := ImageIn);
+```
