@@ -46,7 +46,9 @@ For quick start purposes, a PLC sample project and the SPT_Vision library is sup
 
 The first known common issue is when loading the PLC project on a brand new install. If nothing has been loaded on the system before, you will get some Tc2_System library errors like below.
 
-![BuildErrors](../Images/BuildErrors.PNG)
+
+
+![BuildErrors](../Images/BuildErrors.png)
 
 To fix this, you will need to right-click the top XAE project node and select -> Unload Project, and then right-click Reload Project.
 
@@ -56,8 +58,8 @@ To fix this, you will need to right-click the top XAE project node and select ->
 
 The second known common issue is the TcVision binaries error when trying to activate the project, as seen below. This is due to a mismatch of the publishing system TcVision version and the one you are using.
 
+![BinariesError](../Images/BinariesError.png)
 
-![BinariesError](../Images/BinariesError.PNG)
       
 To fix this, you must reload the tmc files for each of the FileSource TcCom objects under Vision. Make sure to do it for both.
       
