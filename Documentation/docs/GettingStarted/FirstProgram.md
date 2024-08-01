@@ -77,40 +77,31 @@ To configure the project:
 
 2. On the Browse window of the NuGet Package Manager, add the **EventVision** package to the project
 
-   ![NuGet Package](../Images/NugetPackage.PNG)
+    ![NuGet Package](../Images/NugetPackage.PNG)
 
-   > [!TIP]
-   >
-   > If the package does not appear, double check Package source has TwinCAT HMI Customer profile selected
+    > If the package does not appear, double check Package source has TwinCAT HMI Customer profile selected
 
 3. Set a virtual directory of where the video files exist. Go to Server -> TcHmiSrv -> Virtual directories and add the following entry.
 
-   ![VirtDir](../Images/VirtDir.PNG)
+    ![VirtDir](../Images/VirtDir.PNG)
 
 4. On your HMI view, add a new EventVideo Control grid
 
 5. Modify the top 3 properties and make sure the Virtual Drive matched the Virtual Directory created in Step 3
 
-   ![Properties](../Images/Properties.PNG)
+    ![Properties](../Images/Properties.PNG)
 
 6. Launch the HMI in a browser
 
-   
-
-   > [!IMPORTANT]
-   >
-   > The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play video files due to the virtual directory usage.
-
-   
+    > The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play video files due to the virtual directory usage.
 
 7. Double click the Video event to play
 
-   ![PlayVideo](../Images/PlayVideo.PNG)
+    ![PlayVideo](../Images/PlayVideo.PNG)
 
-> [!NOTE]
->
+
 > - If you only see a blank playback window, try adjusting the codec that was used to record the video
-> - If you get a "Waiting For Video" in place of "Play Video", try the following:
+>- If you get a "Waiting For Video" in place of "Play Video", try the following:
 >   - Re-adding the EventVideo Control
 >   - Completely remove the virtual directory and re-add
 >   - Make sure Check Retires and Check Delay is set in the properties window of the control

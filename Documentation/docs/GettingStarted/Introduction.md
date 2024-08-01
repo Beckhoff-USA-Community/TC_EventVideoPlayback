@@ -1,7 +1,7 @@
 
 # Introduction
 
-This site serves as reference documentation for the TwinCAT Event Driven Playback Project.
+This site serves as reference documentation for the TwinCAT Event Video Playback Project.
 
 #### What is TcEventVideoPlayback and why would I use it?
 

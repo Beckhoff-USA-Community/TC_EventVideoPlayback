@@ -9,6 +9,7 @@
 - TwinCAT XAE 4024.4x or higher (PLC and HMI components)
 - TE2000 v1.12.760 or higher
 - TF2000 v1.12.760 or higher
+- TF7000 TcVision
 
 ## Build Project Source Requirements
 

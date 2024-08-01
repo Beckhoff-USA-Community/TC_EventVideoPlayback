@@ -4,7 +4,7 @@
     <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0" MultiBuildValue="DefaultBuild:3"/>
     <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
     <ROW Property="AI_PRODUCTNAME_ARP" Value="[|ProductName]"/>
-    <ROW Property="AI_README_FILE" Value="https://Beckhoff-USA-Community.github.io/TC_EventVideoPlayback/"/>
+    <ROW Property="AI_README_FILE" Value="https://Beckhoff-USA-Community.github.io/TC_EventVideoPlayback_doctest/"/>
     <ROW Property="AI_ThemeStyle" Value="aero" MultiBuildValue="DefaultBuild:classic" MsiKey="AI_ThemeStyle"/>
     <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
     <ROW Property="ALLUSERS" Value="1"/>
@@ -16,7 +16,7 @@
     <ROW Property="AiFeatIcoTwinCAT_HMI_Control" Value="Favicon.exe" Type="8"/>
     <ROW Property="AiFeatIcoTwinCAT_PLC_Lib" Value="StandardPLCTemplate.exe" Type="8"/>
     <ROW Property="AiFeatIcoTwinCAT_Samples" Value="TwinCATProject.exe" Type="8"/>
-    <ROW Property="AiReadmeLink" Value="https://Beckhoff-USA-Community.github.io/TC_EventVideoPlayback/" Type="4"/>
+    <ROW Property="AiReadmeLink" Value="https://Beckhoff-USA-Community.github.io/TC_EventVideoPlayback_doctest/" Type="4"/>
     <ROW Property="AiWinUI" Value="1"/>
     <ROW Property="AiWinUIBtnBackgroundDisabled" MultiBuildValue="DefaultBuild:##9E9E9E"/>
     <ROW Property="AiWinUIBtnBackgroundNormal" MultiBuildValue="DefaultBuild:Transparent"/>
