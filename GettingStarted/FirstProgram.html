@@ -814,39 +814,34 @@
 </li>
 <li>
 <p>On the Browse window of the NuGet Package Manager, add the <strong>EventVision</strong> package to the project</p>
-</li>
-</ol>
 <p><img alt="NuGet Package" src="../Images/NugetPackage.PNG" /></p>
 <blockquote>
-<p>[!TIP]</p>
 <p>If the package does not appear, double check Package source has TwinCAT HMI Customer profile selected</p>
 </blockquote>
-<ol>
-<li>Set a virtual directory of where the video files exist. Go to Server -&gt; TcHmiSrv -&gt; Virtual directories and add the following entry.</li>
-</ol>
+</li>
+<li>
+<p>Set a virtual directory of where the video files exist. Go to Server -&gt; TcHmiSrv -&gt; Virtual directories and add the following entry.</p>
 <p><img alt="VirtDir" src="../Images/VirtDir.PNG" /></p>
-<ol>
+</li>
 <li>
 <p>On your HMI view, add a new EventVideo Control grid</p>
 </li>
 <li>
 <p>Modify the top 3 properties and make sure the Virtual Drive matched the Virtual Directory created in Step 3</p>
-</li>
-</ol>
 <p><img alt="Properties" src="../Images/Properties.PNG" /></p>
-<ol>
-<li>Launch the HMI in a browser</li>
-</ol>
+</li>
+<li>
+<p>Launch the HMI in a browser</p>
 <blockquote>
-<p>[!IMPORTANT]</p>
 <p>The EventVideoPlayback control will only work in browser launch or fully deployed environment. HMI Live View will not allow you to play video files due to the virtual directory usage.</p>
 </blockquote>
-<ol>
-<li>Double click the Video event to play</li>
-</ol>
+</li>
+<li>
+<p>Double click the Video event to play</p>
 <p><img alt="PlayVideo" src="../Images/PlayVideo.PNG" /></p>
+</li>
+</ol>
 <blockquote>
-<p>[!NOTE]</p>
 <ul>
 <li>If you only see a blank playback window, try adjusting the codec that was used to record the video</li>
 <li>If you get a "Waiting For Video" in place of "Play Video", try the following:</li>
