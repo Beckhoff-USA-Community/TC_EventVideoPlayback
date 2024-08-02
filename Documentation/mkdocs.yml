@@ -96,5 +96,6 @@ nav:
         - System Requirements:      GettingStarted/SystemRequirements.md
         - Installation:             GettingStarted/Installation.md
         - First Program:            GettingStarted/FirstProgram.md
-        - Add To Existing Program:  GettingStarted/AddToExist.md
+        - Add to Existing Program:  GettingStarted/AddToExist.md
         - Service Documentation:    GettingStarted/ServiceDoc.md
+        - Licenses and Disclaimers: GettingStarted/Licenses.md
