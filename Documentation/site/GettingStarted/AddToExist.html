@@ -642,6 +642,7 @@
 <ol>
 <li>
 <p>Add the SPT Vision Library to the References section of the PLC Project (v3.0.4 or later)</p>
+<p><img alt="References" src="../Images/References.png" /></p>
 </li>
 <li>
 <p>Instantiate a new FB_ImageToVideo and TriggerEvent BOOL</p>
@@ -655,17 +656,21 @@
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
 <span class="normal">10</span>
-<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>   // ImageToVideo Instance
-   Playback : FB_ImageToVideo := (CameraName            := &#39;Camera1&#39;,
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>VAR
+    // ImageToVideo Instance
+    Playback : FB_ImageToVideo := (CameraName := &#39;Camera1&#39;,
                                    JsonAttribute := &#39;{CreateVid : 1, CameraName: &quot;Camera1&quot;}&#39;,
                                    FramesPerSecond := 10,
-                                   TimeBeforeEvent := T#7S,
+                                   TimeBeforeEvent := T#3S,
                                    TimeAfterEvent := T#3S,
-                                   VideoOutputDirectory : &#39;C:\TcAlarmVideos&#39;,
+                                   VideoOutputDirectory := &#39;C:\TcAlarmVideos&#39;,
                                    ReductionFactor := 0.25);
 
-   // Event Trigger Boolean
-   TriggerEvent : BOOL;
+    // Event Trigger Boolean
+    TriggerEvent : BOOL;
+END_VAR
 </code></pre></div></td></tr></table></div>
 </li>
 <li>
@@ -685,11 +690,11 @@ END_IF
 </code></pre></div></td></tr></table></div></p>
 </li>
 <li>
-<p>Add the AddImage method to your image aquisition loop of your program. This will add an image to the buffer of the Playback block.
-<code>Structured Text
-    Playback.AddImage(ipImageIn := ImageIn);</code></p>
+<p>Add the AddImage method to your image aquisition loop of your program. This will add an image to the buffer of the Playback block.</p>
 </li>
 </ol>
+<p><code>Structured Text
+Playback.AddImage(ipImageIn := ImageIn);</code></p>
 
 
 

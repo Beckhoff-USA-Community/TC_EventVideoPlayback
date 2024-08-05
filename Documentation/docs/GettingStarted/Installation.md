@@ -1,5 +1,8 @@
 ### Installing TcEventVideoPlayback
 
+Download and run TcEventVideoPlayback.msi on both the Engineering and Runtime systems.
+See details below.
+
 There are four different parts of the project that are installed by default:
 
 **TwinCAT PLC Libraries**
@@ -33,5 +36,5 @@ This is what you would select for a TwinCAT XAR only system. Only the service is
 
 The sample projects, HMI nuget package, and PLC libraries will be installed wherever the user selects for the install process. However, the samples will also be located under ```TwinCAT\Functions\TcEventVideoPlayback``` directory.
 
-The installer internally calls the RepTool to install the PLC libraries for you if a PLC XAE profile is available. The installer will also install the HMI nuget package inside the TE2000 resources directory.
+The installer internally calls the RepTool to install the PLC libraries for you if a PLC XAE profile is available. The installer will also install the HMI nuget package within ```TwinCAT\Functions\TE2000-HMI-Engineering\References```.
 

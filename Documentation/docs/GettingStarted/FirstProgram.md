@@ -1,8 +1,8 @@
 ## TcEventVideoPlayback Service
 
-To use the Event Video Playback feature, you must first install the TcEventVideoPlayback service. This service will run in the background of the IPC and convert TwinCAT Vision images to video files when called from the PLC.
+The TcEventVideoPlayback service is installed by the MSI installer. This service will run in the background of the IPC and convert TwinCAT Vision images to video files when called from the PLC. Proper installation can be verified via the Windows Services.
 
-Install the service via the supplied MSI installer file, and you can verify with the Windows Services.
+
 
 ![WindowsService](../Images/WindowsService.PNG)
 
