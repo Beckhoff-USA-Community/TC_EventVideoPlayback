@@ -674,6 +674,8 @@
   <h1>Installation</h1>
 
 <h3 id="installing-tceventvideoplayback">Installing TcEventVideoPlayback</h3>
+<p>Download and run TcEventVideoPlayback.msi on both the Engineering and Runtime systems.
+See details below.</p>
 <p>There are four different parts of the project that are installed by default:</p>
 <p><strong>TwinCAT PLC Libraries</strong></p>
 <p>Installs the required SPT_Base, SPT_Event_Logger, and SPT_Vision libraries to hard disk and imports them into the PLC library repository</p>
@@ -689,7 +691,7 @@
 <p><img alt="InstallerRuntimeOnly" src="../Images/InstallerRuntimeOnly.PNG" /></p>
 <h3 id="installer-notes">Installer Notes</h3>
 <p>The sample projects, HMI nuget package, and PLC libraries will be installed wherever the user selects for the install process. However, the samples will also be located under <code>TwinCAT\Functions\TcEventVideoPlayback</code> directory.</p>
-<p>The installer internally calls the RepTool to install the PLC libraries for you if a PLC XAE profile is available. The installer will also install the HMI nuget package inside the TE2000 resources directory.</p>
+<p>The installer internally calls the RepTool to install the PLC libraries for you if a PLC XAE profile is available. The installer will also install the HMI nuget package within <code>TwinCAT\Functions\TE2000-HMI-Engineering\References</code>.</p>
 
 
 
