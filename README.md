@@ -4,7 +4,7 @@ This repository includes both the source files and the release package for the T
 
 ## Getting Started
 
-Instead of cloning the source repository for this project, start with the installer zip files located in the [Releases section](https://github.com/Beckhoff-USA-Community/TC_EventVideoPlayback/releases) of this repository. Download the latest copy of the TcEventVideoPlayback.MSI from the Releases section. The release package will include a sample PLC project, sample HMI project, PLC library, and the required Windows service installer.
+Instead of cloning the source repository for this project, start with the installer file located in the [Releases section](https://github.com/Beckhoff-USA-Community/TC_EventVideoPlayback/releases) of this repository. Download the latest copy of the TcEventVideoPlayback.exe from the Releases section. The release package will include a sample PLC project, sample HMI project, PLC library, and the required Windows service installer.
 
 ## Documentation
 
