@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tceventvideoplayback-service" class="md-skip">
+        <a href="#sample-project-locations" class="md-skip">
           Skip to content
         </a>
       
@@ -500,6 +500,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#sample-project-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Project Locations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tceventvideoplayback-service" class="md-nav__link">
     <span class="md-ellipsis">
       TcEventVideoPlayback Service
@@ -678,6 +687,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#sample-project-locations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sample Project Locations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tceventvideoplayback-service" class="md-nav__link">
     <span class="md-ellipsis">
       TcEventVideoPlayback Service
@@ -769,8 +787,15 @@
 
   <h1>First Program</h1>
 
+<h2 id="sample-project-locations">Sample Project Locations</h2>
+<p>The sample projects will be installed in these locations:</p>
+<p>Build 4024 TwinCAT</p>
+<p><code>C:\TwinCAT\Functions\TcEventVideoPlayback</code></p>
+<p>Build 4026 TwinCAT</p>
+<p><code>C:\Program Files (x86)\Beckhoff\TwinCAT\Functions\TcEventVideoPlayback</code></p>
+<p>In the event that the sample files are not located here, and they were selected for install, they can be found under <code>C:\Program Files\Beckhoff Automation LLC\TcEventVideoPlayback</code>. All items selected for install can be located here after running the installer.</p>
 <h2 id="tceventvideoplayback-service">TcEventVideoPlayback Service</h2>
-<p>The TcEventVideoPlayback service is installed by the MSI installer. This service will run in the background of the IPC and convert TwinCAT Vision images to video files when called from the PLC. Proper installation can be verified via the Windows Services.</p>
+<p>The TcEventVideoPlayback service is installed by the EXE installer. This service will run in the background of the IPC and convert TwinCAT Vision images to video files when called from the PLC. Proper installation can be verified via the Windows Services.</p>
 <p><img alt="WindowsService" src="../Images/WindowsService.PNG" /></p>
 <h2 id="plc-project-quick-start-sample">PLC Project - Quick Start Sample</h2>
 <p>For quick start purposes, a PLC sample project and the SPT_Vision library is supplied. To run the sample, follow these steps. </p>
@@ -782,8 +807,17 @@
 <p>To open the .tszip select open project in Visual Studio or XAE Shell</p>
 </li>
 <li>
+<p><strong>For 4026 only</strong> - you will need to update the Visu profile by right-clicking the PLC project and going to the Properties page.
+   <img alt="PlcVisuProfile" src="../Images/PlcVisuProfile.png" /></p>
+</li>
+<li>
 <p>Load the included sample images into the TC Vision File Source</p>
 </li>
+</ol>
+<blockquote>
+<p>If using TwinCAT 4026, the files might reject unzipping in the <code>C:\Program Files(x86)</code> without administrator rights. Simply move the files to a location where you have write access.</p>
+</blockquote>
+<ol>
 <li>
 <p>Activate the TwinCAT project</p>
 </li>
@@ -828,9 +862,12 @@
 <p>To fix this, you must reload the tmc files for each of the FileSource TcCom objects under Vision. Make sure to do it for both.</p>
 <p><img alt="ReloadTmc" src="../Images/ReloadTmc.PNG" /></p>
 <h2 id="hmi-project-quick-start-sample">HMI Project - Quick Start Sample</h2>
-<p>Included in the package is a NuGet Package for the EventVision component. This package should be installed properly if selected. To install manually, copy the EventVision.'version'.nupkg file to the directory C:\TwinCAT\Functions\TE2000-HMI-Engineering\References.</p>
+<p>Included in the package is a NuGet Package for the EventVision component. This package should be installed properly if selected. To install manually, copy the EventVision.'version'.nupkg file to the directory <code>C:\TwinCAT\Functions\TE2000-HMI-Engineering\References</code> for 4024, or <code>C:\ProgramData\Beckhoff\NugetPackages</code> for 4026.</p>
 <p><strong>Running the sample</strong>:</p>
 <ol>
+<li>
+<p><strong>For 4026 only</strong> - You may need to upgrade the EventLogger control from inside the NugetPackage manager. Search for <strong>Beckhoff.TwinCAT.HMI.EventLogger</strong> package and select <strong>Update</strong></p>
+</li>
 <li>
 <p>Simply build the HMI project by right-clicking and selecting rebuild</p>
 </li>

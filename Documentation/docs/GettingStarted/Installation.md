@@ -32,7 +32,22 @@ This is what you would select for a TwinCAT XAR only system. Only the service is
 
 ### Installer Notes
 
-The sample projects, HMI nuget package, and PLC libraries will be installed wherever the user selects for the install process. However, the samples will also be located under ```TwinCAT\Functions\TcEventVideoPlayback``` directory.
+The sample projects, HMI nuget package, and PLC libraries will be installed wherever the user selects for the install process. However, the samples will also be located under:
 
-The installer internally calls the RepTool to install the PLC libraries for you if a PLC XAE profile is available. The installer will also install the HMI nuget package within ```TwinCAT\Functions\TE2000-HMI-Engineering\References```.
+Build 4024 TwinCAT
 
+```C:\TwinCAT\Functions\TcEventVideoPlayback```
+
+Build 4026 TwinCAT
+
+```C:\Program Files (x86)\Beckhoff\TwinCAT\Functions\TcEventVideoPlayback```
+
+The installer internally calls the RepTool to install the PLC libraries for you if a PLC XAE profile is available. The installer will also install the HMI nuget package within:
+
+Build 4024 TwinCAT
+
+```C:\TwinCAT\Functions\TE2000-HMI-Engineering\References```
+
+Build 4026 TwinCAT
+
+```C:\ProgramData\Beckhoff\NugetPackages```
