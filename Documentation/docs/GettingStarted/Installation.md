@@ -21,16 +21,14 @@ Installs the Quick Start sample projects. Located at ```TwinCAT\Functions\TcEven
 
 Installs the Windows Background Worker service for converting images to video files and storing locally
 
-![Installer](../Images/Installer.PNG)
+![InstallSelection](../Images/InstallSelection.png)
 
 ### Installing Runtime Only
 
 This is what you would select for a TwinCAT XAR only system. Only the service is required to be installed and it will run in the background.
 
 
-![InstallerRuntimeOnly](../Images/InstallerRuntimeOnly.PNG)
-
-
+![InstallSelectionRuntimeOnly](../Images/InstallSelectionRuntimeOnly.PNG)
 
 ### Installer Notes
 

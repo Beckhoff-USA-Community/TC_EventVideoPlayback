@@ -1,6 +1,14 @@
 
 # Getting Started
 
+## 4026 XAE Requirements
+
+The PLC libraries require the PackML TwinCAT package installed. To install, open a Powershell or CMD instance and run the command:
+```powershell
+tcpkg install TwinCAT.XAE.PLC.Lib.Tc3_PackML_V2  --no-prompt
+```
+
+
 
 ## Installer Requirements
 

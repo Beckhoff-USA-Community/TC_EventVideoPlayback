@@ -38,7 +38,6 @@ END_IF
 ```
 
 5. Add the AddImage method to your image aquisition loop of your program. This will add an image to the buffer of the Playback block.
-
-```Structured Text
+```
 Playback.AddImage(ipImageIn := ImageIn);
 ```

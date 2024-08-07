@@ -1,6 +1,19 @@
+## Sample Project Locations
+
+The sample projects will be installed in these locations:
+
+Build 4024 TwinCAT
+
+```C:\TwinCAT\Functions\TcEventVideoPlayback```
+
+Build 4026 TwinCAT
+```C:\Program Files (x86)\Beckhoff\TwinCAT\Functions\TcEventVideoPlayback```
+
+In the event that the sample files are not located here, and they were selected for install, they can be found under ```C:\Program Files\Beckhoff Automation LLC\TcEventVideoPlayback```. All items selected for install can be located here after running the installer.
+
 ## TcEventVideoPlayback Service
 
-The TcEventVideoPlayback service is installed by the MSI installer. This service will run in the background of the IPC and convert TwinCAT Vision images to video files when called from the PLC. Proper installation can be verified via the Windows Services.
+The TcEventVideoPlayback service is installed by the EXE installer. This service will run in the background of the IPC and convert TwinCAT Vision images to video files when called from the PLC. Proper installation can be verified via the Windows Services.
 
 
 
@@ -14,21 +27,26 @@ For quick start purposes, a PLC sample project and the SPT_Vision library is sup
 
 2. To open the .tszip select open project in Visual Studio or XAE Shell
 
-3. Load the included sample images into the TC Vision File Source
+3. **For 4026 only** - you will need to update the Visu profile by right-clicking the PLC project and going to the Properties page.
+   ![PlcVisuProfile](../Images/PlcVisuProfile.png)
 
-4. Activate the TwinCAT project
+4. Load the included sample images into the TC Vision File Source
 
-5. Put the PLC into Run state
+   > If using TwinCAT 4026, the files might reject unzipping in the ```C:\Program Files(x86)``` without administrator rights. Simply move the files to a location where you have write access.
 
-6. Open the Visu project and press the Run Vision button to start the vision process
+5. Activate the TwinCAT project
+
+6. Put the PLC into Run state
+
+7. Open the Visu project and press the Run Vision button to start the vision process
 
    ![Visu](../Images/Visu.PNG)
 
-7. Check images are streaming via the TwinCAT -> Windows-> ADS Image Watch
+8. Check images are streaming via the TwinCAT -> Windows-> ADS Image Watch
 
-8. To generate a video, press the Trigger Video button on the Visu
+9. To generate a video, press the Trigger Video button on the Visu
 
-9. Check that a video was created in the default directory ```C:\TcAlarmVideos```
+10. Check that a video was created in the default directory ```C:\TcAlarmVideos```
 
 #### Notes on PLC Project
 
@@ -60,7 +78,6 @@ The second known common issue is the TcVision binaries error when trying to acti
 
 ![BinariesError](../Images/BinariesError.png)
 
-
 To fix this, you must reload the tmc files for each of the FileSource TcCom objects under Vision. Make sure to do it for both.
       
 ![ReloadTmc](../Images/ReloadTmc.PNG)
@@ -69,13 +86,15 @@ To fix this, you must reload the tmc files for each of the FileSource TcCom obje
 
 ## HMI Project - Quick Start Sample
 
-Included in the package is a NuGet Package for the EventVision component. This package should be installed properly if selected. To install manually, copy the EventVision.'version'.nupkg file to the directory C:\TwinCAT\Functions\TE2000-HMI-Engineering\References.
+Included in the package is a NuGet Package for the EventVision component. This package should be installed properly if selected. To install manually, copy the EventVision.'version'.nupkg file to the directory ```C:\TwinCAT\Functions\TE2000-HMI-Engineering\References``` for 4024, or ```C:\ProgramData\Beckhoff\NugetPackages``` for 4026.
 
 **Running the sample**:
 
-1. Simply build the HMI project by right-clicking and selecting rebuild
+1. **For 4026 only** - You may need to upgrade the EventLogger control from inside the NugetPackage manager. Search for **Beckhoff.TwinCAT.HMI.EventLogger** package and select **Update**
 
-2. Launch the HMI project in the browser, not live-view. A full browser is required for playback of the video files.
+2. Simply build the HMI project by right-clicking and selecting rebuild
+
+3. Launch the HMI project in the browser, not live-view. A full browser is required for playback of the video files.
 
 > If you get a blank window stating TcHmiSrv Resource is missing, that means the project needs to be rebuilt from step 1
 
