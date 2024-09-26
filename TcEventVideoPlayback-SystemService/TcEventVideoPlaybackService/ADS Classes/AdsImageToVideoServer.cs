@@ -37,12 +37,14 @@ namespace TcEventVideoPlaybackService
 
         readonly private double KeepVideoTime;   // this is in days.  It is real so that I can test 0.001 days 
         readonly private string CodecFourCC;
+        readonly private ulong maxFolderSize;  // this is in MB where 1024 = 1GB
 
-        public AdsImageToVideoServer(ushort port, string portName, ILogger logger, double videoDeleteTime, string codecFourCC) : base(port, portName, logger)
+        public AdsImageToVideoServer(ushort port, string portName, ILogger logger, double videoDeleteTime, string codecFourCC,ulong maxFileSize) : base(port, portName, logger)
         {
             _serverLogger = new ServerLogger(logger);
             this.CodecFourCC = codecFourCC;
             this.KeepVideoTime = videoDeleteTime;
+            this.maxFolderSize = maxFileSize;
             _serverLogger.Logger.LogWarning(videoDeleteTime.ToString()+ " : "+ port);
         }
 
@@ -61,6 +63,12 @@ namespace TcEventVideoPlaybackService
              _serverLogger.Logger.LogWarning($"Server '{this.GetType()}', Address: {base.ServerAddress} connected!");
         }
 
+        protected override void OnServerConnectionStateChanged(object? sender, ServerConnectionStateChangedEventArgs e)
+        {
+            base.OnServerConnectionStateChanged(sender, e);
+
+            _serverLogger.Logger.LogWarning("ConnectionState Changed " + e.State );
+        }
 
         /* Overwrite the indication methods of the AdsServer class for the services your ADS server
          * provides. They are called upon incoming requests. All indications that are not overwritten in
@@ -155,6 +163,9 @@ namespace TcEventVideoPlaybackService
                     string VideoFilePath = Path.GetDirectoryName(VideoFilename);
                     DateTime currentTime = DateTime.Now;
                     string[] VideoFiles = Directory.GetFiles(VideoFilePath, "*.mp4");
+                    double size = 0;
+                    DateTime oldestFileTime = DateTime.Now;
+                    string oldestFileName = "";
                     
                     foreach (var videoFile in VideoFiles)
                     {
@@ -165,8 +176,23 @@ namespace TcEventVideoPlaybackService
                         {
                             File.Delete(videoFile);
                         }
+                        else
+                        {
+                            size += (double)fileInfo.Length/(1024.0*1024.0);    // divide by (1024*1024) to get it to MB
+                            if (fileInfo.CreationTime < oldestFileTime)
+                            {
+                                oldestFileTime = fileInfo.CreationTime;
+                                oldestFileName = fileInfo.FullName;
+                            }
+                        }
                         
 
+                    }
+
+                    //Check the folder size and delete if needed
+                    if ((ulong)size > maxFolderSize & oldestFileName != "")
+                    {
+                        File.Delete(oldestFileName);
                     }
 
 
