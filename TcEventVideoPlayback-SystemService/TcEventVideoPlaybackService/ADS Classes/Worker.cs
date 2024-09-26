@@ -52,7 +52,7 @@ namespace TcEventVideoPlaybackService
                         config.CodecFourCC = "avc1";
                         config.VideoDeleteTime = 10;
                         config.AdsPort = 26128;
-                        config.MaxFolderSize = 1000;    // 1GB of files allowed
+                        config.MaxFolderSize = 250;    // 1GB of files allowed
                     }
 
                 }
@@ -62,7 +62,7 @@ namespace TcEventVideoPlaybackService
                     config.CodecFourCC = "avc1";
                     config.VideoDeleteTime = 5;
                     config.AdsPort = 26129;
-                    config.MaxFolderSize = 1000;    // 1GB of files allowed
+                    config.MaxFolderSize = 250;    // 1GB of files allowed
                 }
                 catch (JsonException e)
                 {
@@ -70,7 +70,7 @@ namespace TcEventVideoPlaybackService
                     config.CodecFourCC = "avc1";
                     config.VideoDeleteTime = 5;
                     config.AdsPort = 26129;
-                    config.MaxFolderSize = 1000;    // 1GB of files allowed
+                    config.MaxFolderSize = 250;    // 1GB of files allowed
                 }
 
 
