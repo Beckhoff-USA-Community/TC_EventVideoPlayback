@@ -13,6 +13,7 @@ namespace TcEventVideoPlaybackService
         public string CodecFourCC { get; set; }
         public double VideoDeleteTime { get; set; }
         public ushort AdsPort { get; set; }
+        public ulong MaxFolderSize { get; set; } // This is in MB
     }
     public sealed class WindowsBackgroundService(ILogger<WindowsBackgroundService> Logger) : BackgroundService
     {
@@ -51,6 +52,7 @@ namespace TcEventVideoPlaybackService
                         config.CodecFourCC = "avc1";
                         config.VideoDeleteTime = 10;
                         config.AdsPort = 26128;
+                        config.MaxFolderSize = 250;    // 1GB of files allowed
                     }
 
                 }
@@ -60,7 +62,7 @@ namespace TcEventVideoPlaybackService
                     config.CodecFourCC = "avc1";
                     config.VideoDeleteTime = 5;
                     config.AdsPort = 26129;
-
+                    config.MaxFolderSize = 250;    // 1GB of files allowed
                 }
                 catch (JsonException e)
                 {
@@ -68,10 +70,11 @@ namespace TcEventVideoPlaybackService
                     config.CodecFourCC = "avc1";
                     config.VideoDeleteTime = 5;
                     config.AdsPort = 26129;
+                    config.MaxFolderSize = 250;    // 1GB of files allowed
                 }
 
 
-                AdsServer = new AdsImageToVideoServer(config.AdsPort, "AdsImageToVideoAdsServer", Logger, config.VideoDeleteTime, config.CodecFourCC);
+                AdsServer = new AdsImageToVideoServer(config.AdsPort, "AdsImageToVideoAdsServer", Logger, config.VideoDeleteTime, config.CodecFourCC,config.MaxFolderSize);
                 Task[] serverTasks = new Task[1];
                 serverTasks[0] = AdsServer.ConnectServerAndWaitAsync(stoppingToken);
 
