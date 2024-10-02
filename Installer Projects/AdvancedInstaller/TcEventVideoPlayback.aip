@@ -254,7 +254,6 @@
     <ROW Action="AddHMI4024" Description="Installing HMI Control"/>
     <ROW Action="AddHMI4026" Description="Installing HMI Control"/>
     <ROW Action="InstallPLCLibs" Description="Installing PLC Library"/>
-    <ROW Action="InstallPackML" Description="Attempting TcPkg Install of PackML V2 Library"/>
     <ROW Action="UninstallHMI" Description="Uninstalling HMI Control"/>
     <ROW Action="UninstallPLCLibs" Description="Uninstalling PLC Libraries"/>
     <ROW Action="UninstallSamples" Description="Uninstalling Sample Projects"/>
@@ -271,7 +270,6 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
     <ROW Name="ExternalUICleaner.dll" SourcePath="&lt;AI_CUSTACTS&gt;ExternalUICleaner.dll"/>
     <ROW Name="PSInstallPLCLibs.ps1" SourcePath="..\Includes\Powershell\PSInstallPLCLibs.ps1"/>
-    <ROW Name="PSInstallPackML.ps1" SourcePath="..\Includes\Powershell\PSInstallPackML.ps1"/>
     <ROW Name="PSUninstallHMIControl.ps1" SourcePath="..\Includes\Powershell\PSUninstallHMIControl.ps1"/>
     <ROW Name="PSUninstallSamples.ps1" SourcePath="..\Includes\Powershell\PSUninstallSamples.ps1"/>
     <ROW Name="PSUnistallPLCLibs.ps1" SourcePath="..\Includes\Powershell\PSUnistallPLCLibs.ps1"/>
@@ -338,7 +336,6 @@
     <ROW Action="AI_DATA_SETTER_5" Type="51" Source="UninstallPLCLibs" Target="AEYAbABhAGcAcwACADEAAQBQAGEAcgBhAG0AcwACAAEAUwBjAHIAaQBwAHQAUwByAGMAQgBpAG4AYQByAHkAUgBvAHcASQBkAAIAUABTAFUAbgBpAHMAdABhAGwAbABQAEwAQwBMAGkAYgBzAC4AcABzADE="/>
     <ROW Action="AI_DATA_SETTER_6" Type="51" Source="UninstallHMI" Target="AEYAbABhAGcAcwACADEAAQBQAGEAcgBhAG0AcwACAAEAUwBjAHIAaQBwAHQAUwByAGMAQgBpAG4AYQByAHkAUgBvAHcASQBkAAIAUABTAFUAbgBpAG4AcwB0AGEAbABsAEgATQBJAEMAbwBuAHQAcgBvAGwALgBwAHMAMQ=="/>
     <ROW Action="AI_DATA_SETTER_7" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
-    <ROW Action="AI_DATA_SETTER_8" Type="51" Source="InstallPackML" Target="AEYAbABhAGcAcwACADEAAQBQAGEAcgBhAG0AcwACAAEAUwBjAHIAaQBwAHQAUwByAGMAQgBpAG4AYQByAHkAUgBvAHcASQBkAAIAUABTAEkAbgBzAHQAYQBsAGwAUABhAGMAawBNAEwALgBwAHMAMQ=="/>
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
     <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
@@ -375,7 +372,6 @@
     <ROW Action="AddHMI4026" Type="1089" Source="aicustact.dll" Target="CopyFileFolder" Options="1" AdditionalSeq="AI_DATA_SETTER_2"/>
     <ROW Action="AddSamples" Type="1089" Source="aicustact.dll" Target="CopyFileFolder" Options="1" AdditionalSeq="AI_DATA_SETTER"/>
     <ROW Action="InstallPLCLibs" Type="1089" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellFileScript" Options="134217728" AdditionalSeq="AI_DATA_SETTER_3"/>
-    <ROW Action="InstallPackML" Type="1089" Source="PowerShellScriptLauncher.dll" Target="RunPowerShellFileScript" Options="134217728" AdditionalSeq="AI_DATA_SETTER_8"/>
     <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][Manufacturer]\[ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
@@ -451,8 +447,6 @@
     <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
     <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="DefaultBuild"/>
     <ROW Action="AI_DATA_SETTER_7" Sequence="1398"/>
-    <ROW Action="InstallPackML" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( (&amp;TwinCAT_PLC_Lib = 3) )" Sequence="5938"/>
-    <ROW Action="AI_DATA_SETTER_8" Condition="( ( NOT Installed ) OR ( Installed AND REMOVE &lt;&gt; &quot;ALL&quot; AND AI_INSTALL_MODE &lt;&gt; &quot;Remove&quot; ) ) AND ( (&amp;TwinCAT_PLC_Lib = 3) )" Sequence="5937"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
