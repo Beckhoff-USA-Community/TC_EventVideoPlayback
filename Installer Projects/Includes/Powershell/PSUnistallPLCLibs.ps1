@@ -3,7 +3,7 @@ Param()
 
 $SPT_Base_Version="3.2.10"
 $SPT_Event_Logger_Version="3.2.0"
-$SPT_Vision_Version="3.0.4"
+$SPT_Vision_Version="3.0.5"
 
 
 # Check Default 4024 location
