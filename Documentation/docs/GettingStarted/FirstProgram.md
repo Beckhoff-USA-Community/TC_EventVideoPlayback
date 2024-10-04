@@ -124,7 +124,7 @@ Included in the package is a NuGet Package for the EventVision component. This p
 
     > If the package does not appear, double check Package source has TwinCAT HMI Customer profile selected
 
-3. Set a virtual directory of where the video files exist. Go to Server -> TcHmiSrv -> Virtual directories and add the following entry.
+3. Set a virtual directory of where the video files exist. Go to Server -> TcHmiSrv -> Virtual directories and add the following entry. Be aware of the Publish Configuration you are selecting. If you are using a Publish Configuration of "Remote" when Publishing the project, make sure you add the virtual directory to the matching Publish Configuration via dropdown menu on the TcHmiSrv page.
 
     ![VirtDir](../Images/VirtDir.PNG)
 
