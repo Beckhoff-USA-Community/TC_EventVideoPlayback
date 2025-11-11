@@ -1,3 +1,7 @@
+# !! Deprecation Notice !!
+
+This repository has been depricated and will remain live for legacy support on 4024 project. For 4026 and newer, it is recommended to use the new TwinCAT Package Manager based [EventVideoPlayback](https://github.com/Beckhoff-USA-Community/EventVideoPlayback).
+
 # Event Video Playback
 
 This repository includes both the source files and the release package for the TwinCAT Event Video Playback package. The package provides an easy to use PLC interface for assembling images captured with TwinCAT Vision into a single video file. When the video file is created, a corresponding alarm event is logged into the TwinCAT Event Logger for later viewing. In addition, an HMI Control component is supplied for easy viewing and playback of logged video events on TwinCAT HMI.
